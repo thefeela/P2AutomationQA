@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Active_slds-radio_faux</name>
+   <tag></tag>
+   <elementGuidId>38f3ca87-d0a6-4110-8550-b01bbd2be998</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;content_164:6455;a&quot;)/div[@class=&quot;baseDefault forceChatterBasePublisher forceChatterLightningComponent&quot;]/div[@class=&quot;forceChatterPublisherPresentationPanel&quot;]/div[@class=&quot;container  activeState&quot;]/div[@class=&quot;cuf-content&quot;]/section[@class=&quot;bodyWrapper&quot;]/div[@class=&quot;slds-grid slds-wrap slds-p-top_small cAddContractLabor&quot;]/div[@class=&quot;slds-p-right_small slds-p-left_small slds-size_6-of-12&quot;]/div[@class=&quot;cListViewLookup&quot;]/div[2]/lightning-datatable[1]/div[2]/div[@class=&quot;slds-table_header-fixed_container slds-scrollable_x&quot;]/div[@class=&quot;slds-scrollable_y&quot;]/div[1]/table[@class=&quot;slds-table slds-table_header-fixed slds-table_bordered slds-table_edit slds-table_resizable-cols&quot;]/tbody[1]/tr[@class=&quot;slds-hint-parent&quot;]/td[1]/lightning-primitive-cell-checkbox[1]/span[@class=&quot;slds-radio&quot;]/label[@class=&quot;slds-radio__label&quot;]/span[@class=&quot;slds-radio_faux&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@type='radio'][1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>slds-radio_faux</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;content_164:6455;a&quot;)/div[@class=&quot;baseDefault forceChatterBasePublisher forceChatterLightningComponent&quot;]/div[@class=&quot;forceChatterPublisherPresentationPanel&quot;]/div[@class=&quot;container  activeState&quot;]/div[@class=&quot;cuf-content&quot;]/section[@class=&quot;bodyWrapper&quot;]/div[@class=&quot;slds-grid slds-wrap slds-p-top_small cAddContractLabor&quot;]/div[@class=&quot;slds-p-right_small slds-p-left_small slds-size_6-of-12&quot;]/div[@class=&quot;cListViewLookup&quot;]/div[2]/lightning-datatable[1]/div[2]/div[@class=&quot;slds-table_header-fixed_container slds-scrollable_x&quot;]/div[@class=&quot;slds-scrollable_y&quot;]/div[1]/table[@class=&quot;slds-table slds-table_header-fixed slds-table_bordered slds-table_edit slds-table_resizable-cols&quot;]/tbody[1]/tr[@class=&quot;slds-hint-parent&quot;]/td[1]/lightning-primitive-cell-checkbox[1]/span[@class=&quot;slds-radio&quot;]/label[@class=&quot;slds-radio__label&quot;]/span[@class=&quot;slds-radio_faux&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='content_164:6455;a']/div/div/div/div[2]/section/div[2]/div[3]/div/div[2]/lightning-datatable/div[2]/div/div/div/table/tbody/tr[2]/td/lightning-primitive-cell-checkbox/span/label/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[1]/following::span[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='QUOTE'])[1]/following::span[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Item 2'])[1]/preceding::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='U10'])[1]/preceding::span[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td/lightning-primitive-cell-checkbox/span/label/span</value>
+   </webElementXpaths>
+</WebElementEntity>

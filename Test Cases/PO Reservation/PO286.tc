@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on adding  a Non Construction Standard labor Reserve PO and Undo Reservation  buttons should be enabled even though the Funding Request Status is in 'Labor Estimates Added' or 'Labor and Material Estimates added'</description>
+   <name>PO286</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d67e1f59-1f8a-4fa5-afbd-9407d9abbe59</testCaseGuid>
+</TestCaseEntity>

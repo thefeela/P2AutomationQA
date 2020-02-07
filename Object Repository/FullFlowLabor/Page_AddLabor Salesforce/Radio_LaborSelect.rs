@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Radio_LaborSelect</name>
+   <tag></tag>
+   <elementGuidId>d46cad41-39f6-4362-b6aa-0985196d2dc1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//span[@class='slds-radio_faux'])[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;content_164:6455;a&quot;)/div[@class=&quot;baseDefault forceChatterBasePublisher forceChatterLightningComponent&quot;]/div[@class=&quot;forceChatterPublisherPresentationPanel&quot;]/div[@class=&quot;container  activeState&quot;]/div[@class=&quot;cuf-content&quot;]/section[@class=&quot;bodyWrapper&quot;]/div[@class=&quot;slds-grid slds-wrap slds-p-top_small cAddContractLabor&quot;]/div[@class=&quot;slds-p-right_small slds-p-right_small slds-p-left_small slds-size_6-of-12&quot;]/div[@class=&quot;cListViewLookup&quot;]/div[2]/lightning-datatable[1]/div[2]/div[@class=&quot;slds-table_header-fixed_container slds-scrollable_x&quot;]/div[@class=&quot;slds-scrollable_y&quot;]/div[1]/table[@class=&quot;slds-table slds-table_header-fixed slds-table_bordered slds-table_edit slds-table_resizable-cols&quot;]/tbody[1]/tr[@class=&quot;slds-hint-parent&quot;]/td[1]/lightning-primitive-cell-checkbox[1]/span[@class=&quot;slds-radio&quot;]/label[@class=&quot;slds-radio__label&quot;]/span[@class=&quot;slds-radio_faux&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>slds-radio_faux</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;content_164:6455;a&quot;)/div[@class=&quot;baseDefault forceChatterBasePublisher forceChatterLightningComponent&quot;]/div[@class=&quot;forceChatterPublisherPresentationPanel&quot;]/div[@class=&quot;container  activeState&quot;]/div[@class=&quot;cuf-content&quot;]/section[@class=&quot;bodyWrapper&quot;]/div[@class=&quot;slds-grid slds-wrap slds-p-top_small cAddContractLabor&quot;]/div[@class=&quot;slds-p-right_small slds-p-right_small slds-p-left_small slds-size_6-of-12&quot;]/div[@class=&quot;cListViewLookup&quot;]/div[2]/lightning-datatable[1]/div[2]/div[@class=&quot;slds-table_header-fixed_container slds-scrollable_x&quot;]/div[@class=&quot;slds-scrollable_y&quot;]/div[1]/table[@class=&quot;slds-table slds-table_header-fixed slds-table_bordered slds-table_edit slds-table_resizable-cols&quot;]/tbody[1]/tr[@class=&quot;slds-hint-parent&quot;]/td[1]/lightning-primitive-cell-checkbox[1]/span[@class=&quot;slds-radio&quot;]/label[@class=&quot;slds-radio__label&quot;]/span[@class=&quot;slds-radio_faux&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='content_164:6455;a']/div/div/div/div[2]/section/div[2]/div/div/div[2]/lightning-datatable/div[2]/div/div/div/table/tbody/tr/td/lightning-primitive-cell-checkbox/span/label/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Show actions'])[25]/following::span[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sorted: None'])[22]/following::span[5]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Item 1'])[1]/preceding::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='COMMUNICATIONS CONSTRUCTION GROUP LLC'])[17]/preceding::span[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//lightning-primitive-cell-checkbox/span/label/span</value>
+   </webElementXpaths>
+</WebElementEntity>
