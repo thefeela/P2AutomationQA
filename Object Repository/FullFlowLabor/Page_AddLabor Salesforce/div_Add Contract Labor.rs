@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//lightning-button/*[text()[contains(., 'Add Contract Labor')]]</value>
+         <value>//*[text()[contains(., 'Add Contract Labor')]]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
