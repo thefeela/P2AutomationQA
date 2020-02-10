@@ -16,6 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.navigateToUrl('https://polaris2--qa2.lightning.force.com/lightning/r/Job__c/a0JL0000004XwY0MAK/view')
 
 WebUI.delay(5)
 
@@ -35,7 +36,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('FullFlowLabor/Page_AddLabor Salesforce/InputLaborCode'))
 
-WebUI.sendKeys(findTestObject('FullFlowLabor/Page_AddLabor Salesforce/InputLaborCode'), 'u10')
+WebUI.sendKeys(findTestObject('FullFlowLabor/Page_AddLabor Salesforce/InputLaborCode'), 'a1')
 
 WebUI.delay(1)
 
