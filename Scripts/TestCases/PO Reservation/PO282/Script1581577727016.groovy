@@ -15,15 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('AddConstructionSTDLabor'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CommonMethods/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.refresh()
+WebUI.callTestCase(findTestCase('CommonMethods/CreateXNETJob'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('links/Esimate_Lnk'))
 
 WebUI.click(findTestObject('links/Labor_Lnk'))
 
-WebUI.verifyElementClickable(findTestObject('ReservationButtons/ReservePO'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementNotClickable(findTestObject('ReservationButtons/ReservePO'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('ReservationButtons/UndoReservation'), 10)
+WebUI.verifyElementNotPresent(findTestObject('ReservationButtons/UndoReservation'), 10)
 
 WebUI.verifyElementNotPresent(findTestObject('Object Repository/links/CloseReservation'), 10)
 

@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Save</name>
+   <name>button_Approve</name>
    <tag></tag>
-   <elementGuidId>c1f2ecea-6603-47ca-9905-9bb4e8e98b41</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@name = 'save' and @type = 'submit' and (text() = 'Save' or . = 'Save')]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[contains(string(), &quot;Save&quot;)] </value>
-      </entry>
-   </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <elementGuidId>a57aebaa-cdce-466b-8878-c9d520dd7bb2</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,90 +18,83 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>slds-button slds-button_brand</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>save</value>
+      <value>slds-button slds-button_neutral slds-button_neutral</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>submit</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-aura-rendered-by</name>
       <type>Main</type>
-      <value>159:6455;a</value>
+      <value>1410:2695;a</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Save</value>
+      <value>Approve</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;content_164:6455;a&quot;)/div[@class=&quot;baseDefault forceChatterBasePublisher forceChatterLightningComponent&quot;]/div[@class=&quot;forceChatterPublisherPresentationPanel&quot;]/div[@class=&quot;container  activeState&quot;]/div[@class=&quot;cuf-content&quot;]/section[@class=&quot;bodyWrapper&quot;]/div[@class=&quot;slds-m-top_medium slds-float_right cAddContractLabor&quot;]/button[@class=&quot;slds-button slds-button_brand&quot;]</value>
+      <value>id(&quot;tab-30&quot;)/slot[1]/flexipage-component2[1]/force-progressive-renderer[1]/slot[1]/slot[1]/flexipage-aura-wrapper[1]/div[1]/div[@class=&quot;cApprovalhistory&quot;]/article[@class=&quot;slds-card&quot;]/div[@class=&quot;slds-card__header slds-grid&quot;]/header[@class=&quot;slds-media slds-media_center slds-has-flexi-truncate&quot;]/div[@class=&quot;slds-no-flex&quot;]/div[@class=&quot;slds-button-group&quot;]/button[@class=&quot;slds-button slds-button_neutral slds-button_neutral&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@name='save']</value>
+      <value>(//button[@type='button'])[36]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='content_164:6455;a']/div/div/div/div[2]/section/div[3]/button[2]</value>
+      <value>//flexipage-tab2[@id='tab-30']/slot/flexipage-component2/force-progressive-renderer/slot/slot/flexipage-aura-wrapper/div/div/article/div/header/div[3]/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Approval History (54)'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Note:'])[1]/following::button[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Approval History'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[7]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reject'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Business Partner'])[1]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reassign'])[1]/preceding::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/button[2]</value>
+      <value>//article/div/header/div[3]/div/button</value>
    </webElementXpaths>
 </WebElementEntity>

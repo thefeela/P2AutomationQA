@@ -14,18 +14,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
-WebUI.refresh()
-WebUI.callTestCase(findTestCase('CreateXNETJob'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('links/Esimate_Lnk'))
+WebUI.navigateToUrl('https://test.salesforce.com/')
 
-WebUI.click(findTestObject('links/Labor_Lnk'))
+WebUI.maximizeWindow()
 
-WebUI.verifyElementNotClickable(findTestObject('ReservationButtons/ReservePO'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/FullFlowLabor/Page_Login  Salesforce/input_Username_username'), 'offshoreadmin@p2.com.qa2')
 
-WebUI.verifyElementNotPresent(findTestObject('ReservationButtons/UndoReservation'), 10)
+WebUI.setEncryptedText(findTestObject('Object Repository/FullFlowLabor/Page_Login  Salesforce/input_Password_pw'), 'AHzSUGJgRo0vGsyF0UWnJA==')
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/links/CloseReservation'), 10)
+WebUI.click(findTestObject('Object Repository/FullFlowLabor/Page_Login  Salesforce/input_Password_Login'))
+
+WebUI.delay(5)
+
+WebUI.delay(2)
 

@@ -4,7 +4,17 @@
    <name>div_Add Contract Labor</name>
    <tag></tag>
    <elementGuidId>42237dee-00d9-4a40-bf00-2134c83479b5</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'Add Contract Labor' and (text() = 'Add Contract Labor' or . = 'Add Contract Labor')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='brandBand_1']/div/div/div/div/one-record-home-flexipage2/forcegenerated-flexipage_fiber_deep_lightning_page_job__c/flexipage-record-page-decorator/slot/flexipage-record-home-template-desktop2/div/div/slot/slot/flexipage-component2/force-progressive-renderer/slot/slot/records-lwc-highlights-panel/records-lwc-record-layout/records-record-layout2/force-highlights2/div/div/div[3]/ul/li[2]/a/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
