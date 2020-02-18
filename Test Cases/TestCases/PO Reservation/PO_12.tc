@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on Reserve PO overlay the Construction and Non Construction Labor Estimates are differentiated
+Pre-condi:Add Non Construction and Construction Labors</description>
+   <name>PO_12</name>
+   <tag>Verify on Reserve PO overlay the Construction and Non Construction Labor Estimates are differentiated</tag>
+   <comment></comment>
+   <testCaseGuid>39d950ea-09ea-4957-96e4-aa6ee0056b89</testCaseGuid>
+</TestCaseEntity>

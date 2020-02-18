@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Reserve POoverlaytable view.- EST.ITEM,DESCRIPTION, PO Number,PO STATUS,Total QTY,REMAINING QTY,RESERVE QTY,UOM,UNIT PRICE,TOTAL PRICE,BUSINESS PARTNER, LABOR PART NUMBER,INVOICED QTY.</description>
+   <name>PO_9</name>
+   <tag></tag>
+   <comment>rowsCount=$rowsCount</comment>
+   <testCaseGuid>3ae63fbb-69f1-4ebb-9d62-e8f7f704a8fa</testCaseGuid>
+</TestCaseEntity>

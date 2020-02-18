@@ -62,42 +62,42 @@
       <guid>5b1554b6-7d8c-441c-99b7-fb7bb8ccc6a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCases/PO Reservation (1)/PO280</testCaseId>
+      <testCaseId>Test Cases/TestCases/PO Reservation/PO_1</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4c71b553-172c-49f1-8887-9e4d11a9796c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TestCases/PO Reservation (1)/PO281</testCaseId>
+      <testCaseId>Test Cases/TestCases/PO Reservation/PO_2</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>fff5215f-b7d8-4bcf-850b-9f360857c342</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TestCases/PO Reservation (1)/PO282</testCaseId>
+      <testCaseId>Test Cases/TestCases/PO Reservation/PO_3</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>72bb371c-0be4-4982-be15-727c6758be08</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TestCases/PO Reservation (1)/PO283</testCaseId>
+      <testCaseId>Test Cases/TestCases/PO Reservation/PO_4</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e98927b1-e202-41a0-964d-29074871a3be</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TestCases/PO Reservation (1)/PO284</testCaseId>
+      <testCaseId>Test Cases/TestCases/PO Reservation/PO_5</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>12f2dc27-e043-457e-a543-ac022c449298</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TestCases/PO Reservation (1)/PO285</testCaseId>
+      <testCaseId>Test Cases/TestCases/PO Reservation/PO_6</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2c98e5b7-240f-48bb-9ef0-ca7d361db605</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TestCases/PO Reservation (1)/PO286</testCaseId>
+      <testCaseId>Test Cases/TestCases/PO Reservation/PO_7</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

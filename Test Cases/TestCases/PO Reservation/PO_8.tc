@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify all the 4 buttons Re-price, Reserve PO, Undo Reservation, Close Reservation buttons are enabled when the Funding Request get approved.</description>
+   <name>PO_8</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9df311d4-4312-4d45-a75f-be4c6e34b78f</testCaseGuid>
+</TestCaseEntity>

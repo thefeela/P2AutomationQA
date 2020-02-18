@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>common_Profile</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'JB0000'</initValue>
+      <name>CommonJobID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'JB0000'</initValue>
+      <name>SearchJobID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['INVOICED QTY', 'LABOR PART NUMBER', 'BUSINESS PARTNER', ' TOTAL PRICE', 'UNIT PRICE', 'UOM', 'RESERVE QTY', 'REMAINING QTY', ' Total QTY', 'PO STATUS', 'PO Number', 'DESCRIPTION', 'EST.ITEM']</initValue>
+      <name>LaborTableHeader</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

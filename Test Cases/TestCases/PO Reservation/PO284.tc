@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify on adding  a Construction Quotable labor Reserve PO and Close Reservation buttons should be disabled only Undo Reservation button should be enabled</description>
-   <name>PO284</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>144f46f4-7490-4f66-a9be-9dc65f6b4bec</testCaseGuid>
-</TestCaseEntity>

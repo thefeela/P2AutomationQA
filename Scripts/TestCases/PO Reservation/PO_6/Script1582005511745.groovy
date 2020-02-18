@@ -14,28 +14,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import internal.GlobalVariable as GlobalVariable
-WebUI.openBrowser('www.test.salesforce.com')
 
-WebUI.callTestCase(findTestCase('CommonMethods/Login -OffshoreAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('EstimateActions/ValidateFundStatusBeforeFund'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(10)
+WebUI.callTestCase(findTestCase('AddEstimate/AddNonConstructionSTDLabor'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('links/Esimate_Lnk'))
 
-WebUI.click(findTestObject('FullFlowLabor/ApproveEstimate/JobInput/input_Search_by_Job'))
-WebUI.delay(2)
-WebUI.setText(findTestObject('FullFlowLabor/ApproveEstimate/JobInput/input_Search_by_Job'), 
-    GlobalVariable.SearchJobID)
+WebUI.click(findTestObject('links/Labor_Lnk'))
+WebUI.verifyElementClickable(findTestObject('ReservationButtons/ReservePO'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.verifyElementPresent(findTestObject('ReservationButtons/UndoReservation'), 10)
 
-WebUI.click(findTestObject('FullFlowLabor/Page_Home  Salesforce/Select_RecentJob'))
-
-WebUI.click(findTestObject('FullFlowLabor/ApproveEstimate/lightning-primitive-icon'))
-
-WebUI.click(findTestObject('FullFlowLabor/ApproveEstimate/span_HISTORY'))
-
-WebUI.click(findTestObject('FullFlowLabor/ApproveEstimate/button_Approve'))
-
-WebUI.click(findTestObject('Object Repository/FullFlowLabor/ApproveEstimate/ButtonAction/button_Approve_1'))
+WebUI.verifyElementNotPresent(findTestObject('ReservationButtons/CloseReservation'), 10)
 

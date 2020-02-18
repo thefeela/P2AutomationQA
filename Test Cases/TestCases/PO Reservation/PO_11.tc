@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on Reserve PO overlay the Labor Estimates which are in Pending/Partially Reserved are displayed when Funding is approved
+Pre - condi : Add Non Construction and Construction Standard/Quotable Labors</description>
+   <name>PO_11</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42995f40-86d9-408d-9728-5010f62d1887</testCaseGuid>
+</TestCaseEntity>

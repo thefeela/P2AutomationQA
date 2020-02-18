@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on Reserve PO overlay by default Reserve QTY field should be disabled and choosing any Standard Labor estimate it should be editable.</description>
+   <name>PO_14</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2537a777-26fc-4637-b40c-aa710eefe708</testCaseGuid>
+</TestCaseEntity>
