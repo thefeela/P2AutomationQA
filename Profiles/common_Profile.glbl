@@ -19,4 +19,14 @@
       <initValue>['INVOICED QTY', 'LABOR PART NUMBER', 'BUSINESS PARTNER', ' TOTAL PRICE', 'UNIT PRICE', 'UOM', 'RESERVE QTY', 'REMAINING QTY', ' Total QTY', 'PO STATUS', 'PO Number', 'DESCRIPTION', 'EST.ITEM']</initValue>
       <name>LaborTableHeader</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'6'</initValue>
+      <name>ReservedQty</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0'</initValue>
+      <name>TotalEstimate_Header</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

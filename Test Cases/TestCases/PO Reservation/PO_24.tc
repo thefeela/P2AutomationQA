@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Reservation Quantity value cannot be Zero.If not system should throw error message Quantityshould be greater than 0</description>
+   <name>PO_24</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>693c58e3-25a7-4f10-b5a2-47fc1ceadc5e</testCaseGuid>
+</TestCaseEntity>

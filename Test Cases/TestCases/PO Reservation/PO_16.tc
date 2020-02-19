@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on choosing any standard labor estimates on the Reserve PO overlay, Reserved QTY field should auto populate the REM QTY of the estimate and text box should be editable and able to do Partial Reservation.</description>
+   <name>PO_16</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0e34cfa-2339-46c0-a4d1-ee81aa4681ae</testCaseGuid>
+</TestCaseEntity>
