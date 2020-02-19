@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on the Reserve PO overlay, selecting Estimates for multiple BPs should throw an error 'Please select Estimates From same Business Partners' and does not allow the proceed to next screen</description>
+   <name>PO_26</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb5a8af9-905c-44bf-b1b6-31a5dd90fadc</testCaseGuid>
+</TestCaseEntity>
