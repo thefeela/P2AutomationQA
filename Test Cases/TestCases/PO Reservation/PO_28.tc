@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify JO/IG able to select multiple estimates from same BP and Reserve PO.</description>
+   <name>PO_28</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb750fdc-9c18-4262-aae5-420d9359fb79</testCaseGuid>
+</TestCaseEntity>

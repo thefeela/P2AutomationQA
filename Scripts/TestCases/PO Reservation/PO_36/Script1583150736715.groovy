@@ -14,18 +14,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('ReservationButtons/ReservePO'))
-WebUI.delay(2)
-WebUI.click(findTestObject('ReservePO/selectALLPO'))
-WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'))
+WebUI.click(findTestObject('Reports/PO Reports/Page_Home  Salesforce/span_Reports'))
 
-WebUI.delay(2)
-WebUI.sendKeys(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'), '-12.0098733')
+WebUI.click(findTestObject('Reports/PO Reports/Page_Reports  Salesforce/div_New Report'))
 
+WebUI.setText(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/input_Search Report Types_modal-search-input'), 
+    'ora_')
 
-WebUI.delay(2)
-WebUI.click(findTestObject('ReservePO/ReservePOBtn'))
+WebUI.click(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/a_ORA_POs'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/ReservePO/NegativeQtyErrorPanel'), 10)
+WebUI.click(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/button_Continue'))
+
+WebUI.setText(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/input_Add column_xtrnJ8u23'), 
+    'po stat')
+
+WebUI.click(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/span_PO Status'))
+
+WebUI.click(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/button_Run'))
+

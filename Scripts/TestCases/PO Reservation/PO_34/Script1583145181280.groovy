@@ -14,18 +14,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('ReservationButtons/ReservePO'))
-WebUI.delay(2)
-WebUI.click(findTestObject('ReservePO/selectALLPO'))
-WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'))
+//WebUI.verifyElementText(findTestObject('Object Repository/ORAPOs/ReservePO/ItemDescription'), '')
 
-WebUI.delay(2)
-WebUI.sendKeys(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'), '-12.0098733')
+WebUI.click(findTestObject('Object Repository/ORAPOs/Page_Lightning Experience  Salesforce/div_View profile_slds-r5'))
 
+WebUI.click(findTestObject('Object Repository/ORAPOs/Page_JB0000267194  Salesforce/p_ORA_POs'))
 
-WebUI.delay(2)
-WebUI.click(findTestObject('ReservePO/ReservePOBtn'))
+WebUI.click(findTestObject('Object Repository/ORAPOs/Page_Recently Viewed  ORA_POs  Salesforce/a_2409818'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/ReservePO/NegativeQtyErrorPanel'), 10)
+WebUI.click(findTestObject('Object Repository/ORAPOs/Page_2409818  Salesforce/a_PO Reservations'))
+
+WebUI.click(findTestObject('Object Repository/ORAPOs/Page_2409818  Salesforce/lightning-formatted-text_OPEN'))
+

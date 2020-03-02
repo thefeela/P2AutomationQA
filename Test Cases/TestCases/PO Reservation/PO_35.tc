@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify SA should be able to edit &quot;PO Status&quot; field in the ORA_PO details page</description>
+   <name>PO_35</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ca55927-11c2-4ca5-936c-57e50da64d89</testCaseGuid>
+</TestCaseEntity>

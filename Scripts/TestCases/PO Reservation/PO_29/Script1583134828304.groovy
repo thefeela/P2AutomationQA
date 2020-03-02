@@ -15,17 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('AddEstimate/AddConstructionSTDLabor'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('ReservationButtons/ReservePO'))
 WebUI.delay(2)
 WebUI.click(findTestObject('ReservePO/selectALLPO'))
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'))
-
+//WebUI.click(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'))
+WebUI.sendKeys(findTestObject('Object Repository/ReservePO/PO_Search'), '24')
 WebUI.delay(2)
-WebUI.sendKeys(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'), '-12.0098733')
-
-
+WebUI.click(findTestObject('Object Repository/ReservePO/SeectReservePONO'))
 WebUI.delay(2)
-WebUI.click(findTestObject('ReservePO/ReservePOBtn'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/ReservePO/NegativeQtyErrorPanel'), 10)
+WebUI.click(findTestObject('Object Repository/ReservePO/FinalReserveButtonwithPO'))
+WebUI.delay(2)

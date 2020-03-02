@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>On the Select PO screen verify that search for the PO should show only POs for the specific BP and Region. National POs for the given BP should also be listed.</description>
+   <name>PO_29</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b4ad5a1-8cd5-45bb-bb54-39037e4597a2</testCaseGuid>
+</TestCaseEntity>

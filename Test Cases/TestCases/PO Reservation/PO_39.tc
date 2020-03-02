@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to Reserve PO with the Open status PO</description>
+   <name>PO_39</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f930c827-98fe-4d0a-aad4-239883c142f1</testCaseGuid>
+</TestCaseEntity>

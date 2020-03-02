@@ -30,11 +30,11 @@ WebUI.click(findTestObject('links/Labor_Lnk'))
 
 WebElement table = driver.findElement(findTestObject('Object Repository/Labor headers/LaborTable'))
 
-WebElement[] rowsInTable = ((table.findElements(By.tagName('th'))) as WebElement[])
+WebElement[] rowsInTable = ((table.findElements(By.tagName('tr'))) as WebElement[])
 
 int rowsCount = rowsInTable.length
 
-List<WebElement> headers = th.findElements(By.tagName('tr'))
+List<WebElement> headers = th.findElements(By.tagName('th'))
 
 WebUI.comment("rowsCount=$rowsCount")
 

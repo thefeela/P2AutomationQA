@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify in Search PO - PO selection layout 'LINE_ITEM_DESCRIPTION' column width should be in a such way that it should display the full field name.</description>
+   <name>PO_32</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d67ded52-4d5b-4082-bdb0-7f0f472db9e8</testCaseGuid>
+</TestCaseEntity>

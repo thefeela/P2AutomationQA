@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lightning-formatted-text_OPEN</name>
+   <tag></tag>
+   <elementGuidId>ba41b401-c505-487f-8e1e-57311a80a013</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>lightning-formatted-text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-output-element-id</name>
+      <type>Main</type>
+      <value>output-field</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>OPEN</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sectionContent-956&quot;)/div[@class=&quot;slds-form&quot;]/slot[1]/force-record-layout-row[@class=&quot;slds-form__row&quot;]/slot[@class=&quot;slds-grid slds-size_1-of-1&quot;]/force-record-layout-item[@class=&quot;slds-form__item slds-no-space&quot;]/div[@class=&quot;slds-grid slds-size_1-of-1 label-stacked undefined&quot;]/div[@class=&quot;slds-form-element slds-hint-parent test-id__output-root slds-form-element_readonly slds-form-element_stacked&quot;]/div[@class=&quot;slds-form-element__control&quot;]/span[@class=&quot;test-id__field-value slds-form-element__static slds-grow word-break-ie11 is-read-only&quot;]/slot[1]/slot[1]/lightning-formatted-text[1]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='sectionContent-956']/div/slot/force-record-layout-row[2]/slot/force-record-layout-item/div/div/div[2]/span/slot/slot/lightning-formatted-text</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[1]/following::lightning-formatted-text[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upgrade Rebuild'])[1]/following::lightning-formatted-text[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Funding Entity'])[1]/preceding::lightning-formatted-text[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Division'])[3]/preceding::lightning-formatted-text[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//force-record-layout-row[2]/slot/force-record-layout-item/div/div/div[2]/span/slot/slot/lightning-formatted-text</value>
+   </webElementXpaths>
+</WebElementEntity>

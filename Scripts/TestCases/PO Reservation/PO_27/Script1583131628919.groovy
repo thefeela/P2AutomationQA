@@ -22,10 +22,10 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'))
 
 WebUI.delay(2)
-WebUI.sendKeys(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'), '-12.0098733')
+WebUI.sendKeys(findTestObject('Object Repository/ReservePO/InputQtyPOReserveOverlay'), '12.18')
 
 
 WebUI.delay(2)
 WebUI.click(findTestObject('ReservePO/ReservePOBtn'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/ReservePO/NegativeQtyErrorPanel'), 10)
+//WebUI.verifyElementPresent(findTestObject('Object Repository/ReservePO/NegativeQtyErrorPanel'), 10)
