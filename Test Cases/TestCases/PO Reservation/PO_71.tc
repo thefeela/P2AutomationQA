@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Overdrawn (ie Reserved amount > PO Total Amount )
+Verify that the PO number field on the Invoices page will show the red indicator icon along with the PO number and hovering over that should display 'Please be advised selected PO has been overdrawn.'</description>
+   <name>PO_71</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e816e5c-5ba6-485c-9d86-4b550521669f</testCaseGuid>
+</TestCaseEntity>

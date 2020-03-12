@@ -42,6 +42,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/Login'), [:], FailureHandling.STO
 WebUI.callTestCase(findTestCase('CommonMethods/CreateXNETJob'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('AddEstimate/AddConstructionSTDLabor'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('EstimateActions/ApproveEstimate'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('ReservationButtons/ReservePO'))
 

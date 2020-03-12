@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that PO funding summary field has 'green color indicator icon - Funds Available', if the PO have funding available and less than 90% of the Funds Reserved</description>
+   <name>PO_73</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9d68a54-f255-44db-9c85-8afd23bd1a37</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the PO number field on the Invoice Lines page will show the indicator icon along with the PO number for JO/IG/BP.</description>
+   <name>PO_64</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5595fdfc-f652-4328-b545-e09235af6534</testCaseGuid>
+</TestCaseEntity>

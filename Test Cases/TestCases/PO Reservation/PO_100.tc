@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Reservation Closed and Pending items should not shown in Close Reservation overlay.</description>
+   <name>PO_100</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b77e63a8-ea5a-4472-aa48-14e7a16c4282</testCaseGuid>
+</TestCaseEntity>

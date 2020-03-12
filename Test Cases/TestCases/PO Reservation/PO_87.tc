@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that after undo Reservation the Invoice lines associated with that PO Reserved Estimate should moved to unmatched status</description>
+   <name>PO_87</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df19855f-fc09-4755-995e-b645f28a79cb</testCaseGuid>
+</TestCaseEntity>

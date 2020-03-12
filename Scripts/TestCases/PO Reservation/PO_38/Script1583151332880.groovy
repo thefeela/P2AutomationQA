@@ -33,8 +33,8 @@ WebUI.click(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/s
 
 WebUI.click(findTestObject('Reports/PO Reports/Page_Report Builder  Salesforce/button_Run'))
 
-
-WebElement table = driver.findElement(findTestObject('Object Repository/Reports/PO Reports/ORAPO_Table'))
+WebElement table = driver.findElement(findTestObject('Object Repository/Labor headers/LaborTable'))
+//WebElement table = driver.findElement(findTestObject('Object Repository/Reports/PO Reports/ORAPO_Table'))
 
 WebElement[] rowsInTable = ((table.findElements(By.tagName('tr'))) as WebElement[])
 

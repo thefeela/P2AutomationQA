@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify multiple reservations on the single standard labor estimate with Single PO. Single PO reservation record should be created and when do PO reservation every time on the estimate item the reserved QTY should be added to Reserved QTY field on the same PO reservation record	Perform multiple reservation with single PO on a labor estimate item</description>
+   <name>PO_54</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5a008bfe-690f-4240-8016-bf1801d301c5</testCaseGuid>
+</TestCaseEntity>

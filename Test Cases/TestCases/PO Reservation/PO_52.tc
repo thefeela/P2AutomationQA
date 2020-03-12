@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Partially Reserved status on the estimates tab for standard labor by doing Partial Reservation. REM QTY should be displayed with proper values( difference of the total and reserved quantity). Child node PO reservation record should be created with Status as Reserved and Reserved QTY, PO number should also be displayed</description>
+   <name>PO_52</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>626b92d2-9440-4825-8737-0c82017fc9d1</testCaseGuid>
+</TestCaseEntity>

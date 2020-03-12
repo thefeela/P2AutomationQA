@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When we click on Close Reservation button, the overlay should show only PO Reservation record which is in Reserved status.</description>
+   <name>PO_99</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>160c3408-026d-4773-a259-0ffb1eb216a3</testCaseGuid>
+</TestCaseEntity>

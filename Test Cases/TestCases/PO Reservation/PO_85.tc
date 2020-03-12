@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify in ORA PO page 'P2 PO Remaining Balance' , 'Actual P2 PO Reservations' are getting updated properly</description>
+   <name>PO_85</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>623bc30f-1822-401e-a475-11aa7d2e5d1a</testCaseGuid>
+</TestCaseEntity>

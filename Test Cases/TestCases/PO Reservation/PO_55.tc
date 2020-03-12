@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify multiple PO reservation on the single standard labor estimate. Multiple PO reservation records should be created. Reserved QTY and PO number should be updated accordingly for the Po's Reserved.	Perform multiple PO reservation with multiple PO on the labor estimate item</description>
+   <name>PO_55</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a6a7986-233a-4444-b2af-d958125f9ac5</testCaseGuid>
+</TestCaseEntity>

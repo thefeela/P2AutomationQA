@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the PO number field on the Estimates page will show the indicator icon along with the PO number for JO/IG/BP</description>
+   <name>PO_57</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5c7b86a-961f-485f-9906-9dd6ccf1f797</testCaseGuid>
+</TestCaseEntity>

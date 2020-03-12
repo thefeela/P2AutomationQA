@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create PO with Oracle amount $1000.
+Reserve PO for the Estimates with 90% of the remaining amount of the PO Verify that the user should be able to reserve PO and &quot;Please be advised selected PO has 90% of available funds reserved.&quot; warning message should be displayed.</description>
+   <name>PO_44</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2fd36be5-d2e4-4e5b-bb40-a61b2098e76c</testCaseGuid>
+</TestCaseEntity>

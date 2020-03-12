@@ -46,7 +46,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('FullFlowLabor/InputQuantity'))
 
-WebUI.sendKeys(findTestObject('FullFlowLabor/InputQuantity'), '10')
+WebUI.sendKeys(findTestObject('FullFlowLabor/InputQuantity'), GlobalVariable.LaborQty)
 //WebUI.focus('FullFlowLabor/Page_AddLabor Salesforce/button_Save')
 WebUI.delay(2)
 WebUI.click(findTestObject('FullFlowLabor/Page_AddLabor Salesforce/button_Save'))

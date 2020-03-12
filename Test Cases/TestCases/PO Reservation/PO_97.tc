@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user not able to do partial Undo Reservation</description>
+   <name>PO_97</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0ce6431-d71b-4ddc-b827-3f2778919333</testCaseGuid>
+</TestCaseEntity>

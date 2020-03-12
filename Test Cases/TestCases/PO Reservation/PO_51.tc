@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Reserved status on the estimates tab by doing Full PO Reservation and UNRESERVED QTY should be displayed as 0. Child node PO reservation record should be created with Status as Reserved and Reserved QTY, PO number should also be displayed.</description>
+   <name>PO_51</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6730c2fc-9b44-49c3-b2d2-102ee61aad3d</testCaseGuid>
+</TestCaseEntity>

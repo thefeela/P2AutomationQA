@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create PO with Oracle amount $1000.
+Reserve PO for the Estimates with more than the total remaining amount of the PO Verify that the user should not be able to reserve PO and &quot;Please be advised selected PO has been overdrawn.&quot; warning message should be displayed.</description>
+   <name>PO_48</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e8f5b09f-7a33-42c4-b37d-2a1f486bccd5</testCaseGuid>
+</TestCaseEntity>

@@ -29,4 +29,19 @@
       <initValue>'0'</initValue>
       <name>TotalEstimate_Header</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>LaborQty</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>ORAPO_Number</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>ORAPO_OracleAmt</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

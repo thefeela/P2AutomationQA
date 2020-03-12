@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the PO number indicator icon should be present for Standard and Quotable Construction and Non Construction Labors.</description>
+   <name>PO_65</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b67e0f29-d721-4a56-834a-921d19f7f050</testCaseGuid>
+</TestCaseEntity>

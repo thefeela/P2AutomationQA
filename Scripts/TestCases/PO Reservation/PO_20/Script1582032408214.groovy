@@ -29,6 +29,9 @@ WebUI.click(findTestObject('links/Labor_Lnk'))
 
 WebUI.verifyElementNotClickable(findTestObject('Object Repository/EditLaborQty/EditQty'), FailureHandling.STOP_ON_FAILURE)
 
+
+WebElement table = driver.findElement(findTestObject('Object Repository/Labor headers/LaborTable'))
+
 WebElement[] rowsInTable = ((table.findElements(By.tagName('th'))) as WebElement[])
 
 int rowsCount = rowsInTable.length

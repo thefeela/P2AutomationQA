@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify in the Undo Reservation Overlay this message 'Undo Reservation will move any Invoice lines in Pending/Rejected/Withdrawn status to unmatched status' should be displayed</description>
+   <name>PO_77</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2bc5ec96-0a98-4cb4-b0be-f4abe2033e9d</testCaseGuid>
+</TestCaseEntity>

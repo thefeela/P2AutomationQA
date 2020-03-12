@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify JO/IG able to do Undo reservation for the partially reserved estimate by clicking on undo reservation button.	Estimate should be in Partially Reserved status.</description>
+   <name>PO_96</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b37b4e2-cc31-4469-bb3b-a8e71e2528f9</testCaseGuid>
+</TestCaseEntity>

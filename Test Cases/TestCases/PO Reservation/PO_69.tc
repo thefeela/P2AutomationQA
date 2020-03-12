@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>99% of PO Funds Reserved
+Verify that the PO number field on the Invoices page will show the red indicator icon along with the PO number and hovering over that should display 'Please be advised selected PO has 99% of available funds reserved.</description>
+   <name>PO_69</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee8b2901-f9f1-469b-9634-653e798a4b2d</testCaseGuid>
+</TestCaseEntity>
