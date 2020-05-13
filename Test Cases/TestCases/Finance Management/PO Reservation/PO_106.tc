@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>BP should not be able to edit PO Reservations quantity. ThePencil icon should be non clickable on INVOICE LINES screen in the JOB</description>
+   <name>PO_106</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d121399c-e11c-4f04-bb0a-e7aeec1cc7bb</testCaseGuid>
+</TestCaseEntity>

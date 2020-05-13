@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>get current job into global variable</description>
+   <name>GetCuurentJobId</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>274c04d9-c5dc-4fbe-bd15-5fa9752e44d0</testCaseGuid>
+</TestCaseEntity>

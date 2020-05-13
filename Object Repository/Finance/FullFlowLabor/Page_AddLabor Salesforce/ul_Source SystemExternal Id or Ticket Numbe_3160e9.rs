@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ul_Source SystemExternal Id or Ticket Numbe_3160e9</name>
+   <tag></tag>
+   <elementGuidId>a191f4a8-7326-4f1f-b34f-90477280aff9</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>ul</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>slds-grid slds-wrap</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>list</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-aura-rendered-by</name>
+      <type>Main</type>
+      <value>2626:0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Source SystemExternal Id or Ticket NumberNeed By DateTarget Completion DateEst Construction Completion DateTotal Estimate60Reservation StatusNot ReservedJob In JeopardyTotal Coax Installed0Total Fiber Installed0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;brandBand_1&quot;)/div[@class=&quot;slds-template__container&quot;]/div[@class=&quot;center oneCenterStage lafSinglePaneWindowManager&quot;]/div[@class=&quot;windowViewMode-normal oneContent active lafPageHost&quot;]/div[@class=&quot;oneRecordHomeFlexipage2Wrapper&quot;]/one-record-home-flexipage2[1]/forcegenerated-flexipage_fiber_deep_lightning_page_job__c[@class=&quot;forcegenerated-flexipage-module&quot;]/flexipage-record-page-decorator[1]/slot[1]/flexipage-record-home-template-desktop2[@class=&quot;forcegenerated-flexipage-template&quot;]/div[@class=&quot;slds-grid slds-wrap&quot;]/div[@class=&quot;slds-col slds-size_1-of-1 row region-header&quot;]/slot[1]/slot[1]/flexipage-component2[2]/force-progressive-renderer[1]/slot[1]/slot[1]/flexipage-aura-wrapper[1]/div[1]/div[@class=&quot;slds-page-header slds-page-header_record-home cHighlightPanelComp&quot;]/div[@class=&quot;slds-page-header__row slds-page-header__row_gutters&quot;]/div[@class=&quot;slds-page-header__col-details&quot;]/ul[@class=&quot;slds-grid slds-wrap&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='brandBand_1']/div/div/div[4]/div/one-record-home-flexipage2/forcegenerated-flexipage_fiber_deep_lightning_page_job__c/flexipage-record-page-decorator/slot/flexipage-record-home-template-desktop2/div/div/slot/slot/flexipage-component2[2]/force-progressive-renderer/slot/slot/flexipage-aura-wrapper/div/div/div/div/ul</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Opened'])[15]/following::ul[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Not Started'])[1]/following::ul[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//flexipage-aura-wrapper/div/div/div/div/ul</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Negative quantity should not be allowed when we you do PO reservation on Reserve PO overlay.If we add negative quantity, system should throw error message Quantityshould be greater than 0</description>
+   <name>PO_23</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>742c1898-2983-4e90-9601-d3988598cd26</testCaseGuid>
+</TestCaseEntity>

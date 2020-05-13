@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on selecting the estimates the total estimates amount selected should be calculated and displayed on the top left of the overlay</description>
+   <name>PO_21</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>662bca97-3122-4d8a-b8cf-b2b5ad9c969e</testCaseGuid>
+</TestCaseEntity>

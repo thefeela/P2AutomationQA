@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>PO Reservations in &quot;Reserved&quot; status but which already has Invoices linked (Approved and linked status) should not be shown in undo reservation overlay</description>
+   <name>PO_92</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>41fd1d96-3cd8-4654-800a-097b5f5cc4f9</testCaseGuid>
+</TestCaseEntity>

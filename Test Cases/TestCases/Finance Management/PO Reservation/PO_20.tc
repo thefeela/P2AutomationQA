@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Total Price value should be displayed as expected when we select any estimate item on Reserve PO overlay. Verify the calculation with different QTY and with decimal.</description>
+   <name>PO_20</name>
+   <tag></tag>
+   <comment>rowsCount=$rowsCount</comment>
+   <testCaseGuid>ffedce3a-99b8-4d9e-803a-dc0cf11b8fe0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that Reservation Closed and Pending Labor Estimate items should not show in undo reservation overlay.</description>
+   <name>PO_76</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>37767e20-b009-41a1-a69c-1a00c35c8d2e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search for PO should display PO number, PO Status, Line_Item_Description, Oracle Project Name, Business Partner Name, Oracle Project number, Expenditure Type.</description>
+   <name>PO_30</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7d97783e-ddb2-44aa-8c25-3dc8b019edf6</testCaseGuid>
+</TestCaseEntity>

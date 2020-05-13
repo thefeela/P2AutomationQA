@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that after undo reservation, the PO reserved record should get deleted from the estimates and Invoice lines tab also status of the Estimate should get updated properly.</description>
+   <name>PO_84</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5093bb5-e492-4af8-85e8-ba17b65ff709</testCaseGuid>
+</TestCaseEntity>

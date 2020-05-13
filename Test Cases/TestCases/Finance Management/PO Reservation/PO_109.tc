@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify when JO/IG close reservation for a Pending Invoice lines with P2 Status - Created, then upon changing the P2 status to Pending the invoice lines should be displayed and the invoice line of the closed reservation estimate should get displayed in unmatched invoice lines.	Add a Construction/Non Construction estimate- Reserve PO and upload Invoice and keep the P2 Status of invoice lines as Created</description>
+   <name>PO_109</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4248adfe-052f-42a4-95bb-2ce57d6a8042</testCaseGuid>
+</TestCaseEntity>

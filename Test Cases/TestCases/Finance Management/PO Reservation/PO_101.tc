@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify on performing close reservation on the invoice lines with pending status, the Remaining Qty and Remaining Amount should be updated as 0 in the PO Reservation record</description>
+   <name>PO_101</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5c2f7ffb-6445-463a-ac5c-eed9a9fe6308</testCaseGuid>
+</TestCaseEntity>

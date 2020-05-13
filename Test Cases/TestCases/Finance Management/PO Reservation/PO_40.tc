@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>&quot;Verify user should not able to perfom PO reservation when PO status in below status, Closed W/ Reservations Closed&quot;</description>
+   <name>PO_40</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b591815e-9b43-42de-9735-c6379076acdb</testCaseGuid>
+</TestCaseEntity>

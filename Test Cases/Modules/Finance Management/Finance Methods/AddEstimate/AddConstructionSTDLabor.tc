@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Find the recent job</description>
+   <name>AddConstructionSTDLabor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bdf4dd02-1777-4dad-962b-9deb455193e1</testCaseGuid>
+</TestCaseEntity>

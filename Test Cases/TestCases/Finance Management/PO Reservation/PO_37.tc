@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>&quot;Verify PO status field should be displayed on PO reservation search screen</description>
+   <name>PO_37</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97c83b19-1ccf-4515-9f70-efd522decc80</testCaseGuid>
+</TestCaseEntity>

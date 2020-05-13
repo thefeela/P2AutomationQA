@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Select few estimates and proceed to the &quot;Select PO to Reserve Funding&quot; screen, select a valid PO for the Business Partner and verify the values for Oracle Project Name, Oracle Project Number: &quot;ORACLE PO Total Amount&quot;, &quot;Current P2 PO Reservations&quot;, &quot;Selected Total:&quot;, &quot;P2 PO Remaining Balance&quot;</description>
+   <name>PO_49</name>
+   <tag></tag>
+   <comment>rowsCount=$rowsCount</comment>
+   <testCaseGuid>08731bed-8048-475f-be4f-e35666670aef</testCaseGuid>
+</TestCaseEntity>

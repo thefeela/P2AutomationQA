@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>JO/IG should be allowed to edit PO Reservations quantity through the Pencil icon on INVOICE LINES screen	Reserve PO for some estimates</description>
+   <name>PO_105</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6a31ad94-af0d-499c-8a7f-cb8618ffd7d4</testCaseGuid>
+</TestCaseEntity>

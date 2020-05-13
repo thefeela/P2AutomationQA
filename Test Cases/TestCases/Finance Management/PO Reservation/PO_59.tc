@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>90% of PO Funds Reserved
+Verify that the PO number field on the Estimates page will show the yellow indicator icon along with the PO number and hovering over that should display 'Please be advised selected PO has 90% of available funds reserved.</description>
+   <name>PO_59</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1e7fdcf4-1dcc-438a-903b-aacde1ed97d1</testCaseGuid>
+</TestCaseEntity>

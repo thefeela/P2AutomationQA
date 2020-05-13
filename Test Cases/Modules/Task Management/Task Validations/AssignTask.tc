@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AssignTask</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be091af7-a1f7-4879-bd29-05bd2ce0bf3b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>027669ed-a6bf-45a2-82dd-283edd832129</id>
+      <masked>false</masked>
+      <name>URL</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5428542c-b1d1-45f3-ade0-f60af74f6fa6</id>
+      <masked>false</masked>
+      <name>FromUser</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d9cdd396-ef90-4dfd-8d2d-501bf6802103</id>
+      <masked>false</masked>
+      <name>ToUser</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3559a57b-b7ad-4130-bbb4-e129be58cf7a</id>
+      <masked>false</masked>
+      <name>ArchitField</name>
+   </variable>
+</TestCaseEntity>

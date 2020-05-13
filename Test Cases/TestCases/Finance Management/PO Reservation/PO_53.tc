@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Reserved status on the estimates tab by doing reservation on the Remaining Qty on the Estimate which has already existing PO Reservations.	Do full reservation on the remaining quantity of Partially Reserved Estimate</description>
+   <name>PO_53</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2428deb-b97f-4c4f-8e2d-9a5bff577888</testCaseGuid>
+</TestCaseEntity>

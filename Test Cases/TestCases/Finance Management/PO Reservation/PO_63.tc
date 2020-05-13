@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>&quot;No Funds available in PO
+Verify that the PO number field on the Estimates page will show the red indicator icon along with the PO number and hovering over that should display 'Please be advised selected PO has no remaining funds available.</description>
+   <name>PO_63</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d30e3a3-a43e-4724-ab3e-1c31d2c600e2</testCaseGuid>
+</TestCaseEntity>

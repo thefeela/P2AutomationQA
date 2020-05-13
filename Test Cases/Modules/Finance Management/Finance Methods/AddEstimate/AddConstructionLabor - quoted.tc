@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Find the recent job</description>
+   <name>AddConstructionLabor - quoted</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cde37b82-f6c8-41e4-8782-c5fc3bd0bd76</testCaseGuid>
+</TestCaseEntity>

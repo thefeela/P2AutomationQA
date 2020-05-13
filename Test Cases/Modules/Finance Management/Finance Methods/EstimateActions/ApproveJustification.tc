@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ApproveJustification</name>
+   <tag></tag>
+   <comment>rowsCount=$rowsCount</comment>
+   <testCaseGuid>4d7dc5e3-fa64-4af2-be94-91b52f0d684b</testCaseGuid>
+</TestCaseEntity>

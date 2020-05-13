@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Reserve PO and Invoice line in Pending Status and P2 Status in Pending
+Verify when all the invoice lines is in Pending Status for a PO Reserved Estimate, user able to do undo Reservation for that Estimate.</description>
+   <name>PO_78</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5012856d-c227-4423-a0be-746746fe38bb</testCaseGuid>
+</TestCaseEntity>

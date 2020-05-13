@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>No Funds available in PO
+Verify that the PO number field on the Invoices page will show the red indicator icon along with the PO number and hovering over that should display 'Please be advised selected PO has no remaining funds available.</description>
+   <name>PO_70</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab1dd07d-13d8-4483-9c5c-e32b5aa1c4b1</testCaseGuid>
+</TestCaseEntity>

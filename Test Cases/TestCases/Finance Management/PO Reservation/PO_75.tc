@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that PO funding summary field has orange color icon - 95% PO Funds Reserved , if the PO have funding available and more than 95% of the Funds in that PO is Reserved</description>
+   <name>PO_75</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2d0f7bdf-64ba-4523-a45e-35283d74f71e</testCaseGuid>
+</TestCaseEntity>

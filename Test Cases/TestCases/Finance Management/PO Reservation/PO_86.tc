@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Reserve PO and Invoice Line in Withdrawn Status and P2 Status in Pending
+Verify when all the invoice lines is in Withdrawn Status for a PO Reserved Estimate, user able to do undo Reservation for that Estimate.</description>
+   <name>PO_86</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb2e68eb-e7d7-46f6-ba09-2874ec993881</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Select PO to Reserve Funding&quot; screen, select a valid PO for the Business Partner and verify the values for &quot;ORACLE PO Total Amount&quot;, &quot;Current P2 PO Reservations&quot;, &quot;Selected Total:&quot;, &quot;P2 PO Remaining Balance&quot; fields should have the &quot;$&quot; indicator before the amounts.</description>
+   <name>PO_50</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99e65ceb-7595-4458-97d6-9aeba6b36c51</testCaseGuid>
+</TestCaseEntity>
