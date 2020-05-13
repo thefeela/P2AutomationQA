@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(@class,'slds-button slds-button_icon-border-filled')]</value>
+         <value>//button[contains(@class,'slds-button slds-button_icon-border-filled')] | //li/button[contains(@class,'slds-button slds-button_icon-border-filled')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

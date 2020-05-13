@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Reserve PO and Invoice Line in Rejected Status and P2 Status in Pending
-Verify when all the invoice lines is in Rejected Status for a PO Reserved Estimate, user able to do undo Reservation for that Estimate.</description>
-   <name>PO_82</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>853a7844-73df-4e80-bc01-9adb6b744ba7</testCaseGuid>
-</TestCaseEntity>

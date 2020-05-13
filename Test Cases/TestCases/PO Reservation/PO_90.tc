@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Reserve PO for an estimate and add multiple invoices for that estimate using Same PO
-Verify when either one of the invoice lines is in Approved Status for a PO Reserved Estimate, user unable to do undo Reservation for that Estimate.</description>
-   <name>PO_90</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5e0d359a-b61a-4838-8fd5-51589e43072e</testCaseGuid>
-</TestCaseEntity>

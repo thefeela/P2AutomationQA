@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Reserve PO and Invoice Line in Approved Status
-Verify when all the invoice lines is in Approved Status for a PO Reserved Estimate, user unable to do undo Reservation for that Estimate.</description>
-   <name>PO_89</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>36422181-34d9-4d98-bcd4-86e53280eb56</testCaseGuid>
-</TestCaseEntity>

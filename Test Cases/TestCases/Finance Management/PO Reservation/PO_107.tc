@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify when JO/IG close reservation for a Pending Invoice lines with P2 Status -Pending, then it should get moved to unmatched invoice lines	Add a Construction/Non Construction estimate- Reserve PO and upload Invoice and change the P2 Status of invoice line to Pending</description>
+   <name>PO_107</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>58f49c3c-df22-41f4-b672-c503ebac39f7</testCaseGuid>
+</TestCaseEntity>

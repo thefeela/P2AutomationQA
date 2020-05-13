@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>&quot;Funds Available in the ORA PO and less than 90% of PO Funds Reserved &quot;
-Verify that the PO number field on the Estimates page will show the green indicator icon along with the PO number</description>
-   <name>PO_58</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>6dab2463-3e9f-4938-99d3-9d53a8354a34</testCaseGuid>
-</TestCaseEntity>

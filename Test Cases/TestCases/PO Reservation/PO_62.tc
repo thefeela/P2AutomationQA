@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Overdrawn (ie Reserved amount > PO Total Amount )
-Verify that the PO number field on the Estimates page will show the red indicator icon along with the PO number and hovering over that should display 'Please be advised selected PO has been overdrawn.</description>
-   <name>PO_62</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>925d9dcb-8c19-479d-b797-12d77da1f0fa</testCaseGuid>
-</TestCaseEntity>

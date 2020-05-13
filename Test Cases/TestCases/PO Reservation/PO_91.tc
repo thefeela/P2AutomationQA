@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Reserve PO and Upload Invoice
-When the invoice is in Pending status open it in multiple tabs. Link and Approve the invoice in a tab and also try to undo reserve that estimate in a different tab. That estimate should not be visible in undo reservation overlay.</description>
-   <name>PO_91</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>24afc98b-52d9-4931-9586-62477ccc9510</testCaseGuid>
-</TestCaseEntity>

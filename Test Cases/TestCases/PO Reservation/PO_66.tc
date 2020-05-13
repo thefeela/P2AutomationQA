@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Funds Available in the ORA PO and less than 90% of PO Funds Reserved
-Verify that the PO number field on the Invoices page will show the green indicator icon along with the PO number</description>
-   <name>PO_66</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3f53279a-10bc-4b93-b92c-4b3b05a394dd</testCaseGuid>
-</TestCaseEntity>

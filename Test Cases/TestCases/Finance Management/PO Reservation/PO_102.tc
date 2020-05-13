@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the status of that estimate should changed to Pending and in the child row it should get changed to reservation Closed and the Reserved QTY should be changed to '0' and the unreserved qty also should be updated	Do close reservation on estimate with no invoice</description>
+   <name>PO_102</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8cd91fc-88c1-4c00-9f08-32ccea3a8f04</testCaseGuid>
+</TestCaseEntity>
