@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the Order of fields - Business Partner Search, Labor Zone, Labor Code Search, Quantity, User Defined Description. cancel and Save buttons</description>
+   <name>Estimates_6</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efa12294-eaa0-4189-922a-09745e702561</testCaseGuid>
+</TestCaseEntity>
