@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AddLabor Rates</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>09ed50a0-6340-4dc8-95f3-f9b0607bad6d</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>42310455-e701-4216-a6f1-bc09a9b27555</id>
+      <masked>false</masked>
+      <name>LaborName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a79eef41-a511-4c3f-b527-3232d7d3b4f4</id>
+      <masked>false</masked>
+      <name>LaborRateCard</name>
+   </variable>
+</TestCaseEntity>

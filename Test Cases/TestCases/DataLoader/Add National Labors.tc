@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Adding National labor with categorywise</description>
+   <name>Add National Labors</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d10f50e4-9182-4c03-9ca1-0de2c54c0feb</testCaseGuid>
+</TestCaseEntity>

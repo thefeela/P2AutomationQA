@@ -71,8 +71,18 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'Automation_ConsQuote'</initValue>
+      <name>ConsQuote</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Automation_NonConsQuote'</initValue>
+      <name>NonConsQuote</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'Automation_ConsSTD'</initValue>
-      <name>CondSTD</name>
+      <name>ConsSTD</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -81,12 +91,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Automation_ConsNonSTD'</initValue>
-      <name>ConsNonSTD</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Automation_NonConsNonSTD'</initValue>
-      <name>NonConsNonSTD</name>
+      <initValue>0</initValue>
+      <name>Incrementer</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

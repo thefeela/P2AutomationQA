@@ -15,5 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Login Test offshoreadmin'), [('pwd') : '', ('User1') : ''], FailureHandling.STOP_ON_FAILURE)
+not_run: CucumberKW.runFeatureFile('Include/features/test.feature')
+
+CucumberKW.runFeatureFile('Include/features/N_CommercialJobsEFibre.feature')
 

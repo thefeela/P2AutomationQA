@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<log4j:configuration debug="true"
+	xmlns:log4j='http://jakarta.apache.org/log4j/' status="WARN">
+
+	<appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+		</Console>
+		<File name="file" fileName="./p2_Automation.log"
+			immediateFlush="false" append="true">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+		</File>
+	</appenders>
+	<Loggers>
+		<root level = "Debug">
+			
+			<appender-ref ref="console" />
+			<appender-ref ref="file" />
+		</root>
+	</Loggers>
+
+</log4j:configuration>

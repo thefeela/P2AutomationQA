@@ -6,12 +6,11 @@
    <elementGuidId>bafabdcd-e03d-4087-ab16-34edf3a859f7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[string()='Save'][@title='Save']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[contains(.,'Save')][contains(@class, 'slds-button slds-button--neutral uiButton--default uiButton--brand uiButton forceActionButton')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

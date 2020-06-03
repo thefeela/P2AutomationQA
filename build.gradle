@@ -1,20 +1,48 @@
 plugins {
   id 'java'
   id "com.katalon.gradle-plugin" version "0.0.7"
+  id "org.opentorah.docbook" version "0.7.50"
+  id 'com.github.johnrengelman.shadow' version '4.0.4'
+ 
+}
+ext {
+    groovyVersion   = '2.4.7'
+}
+configurations {
+    generateDocs
 }
 
 repositories {
+    jcenter()
   mavenCentral()
 }
 
 dependencies {
-  // sample dependencies
-  // rest-assured
-  // compile 'io.rest-assured:rest-assured:3.2.0'
-  // JsonPath
-  // compile 'io.rest-assured:json-path:3.2.0'
-  // XmlPath
-  // compile 'io.rest-assured:json-path:3.2.0'
-  // JSON Schema Validation
-  // compile 'io.rest-assured:json-schema-validator:3.2.0'
+    generateDocs "org.codehaus.groovy:groovy-all:${groovyVersion}"
 }
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['Keywords', 'Include/scripts/groovy']
+            srcDir 'Libs'
+        }
+    }
+}
+
+katalon {
+    dependencyPrefix = "com.katalon"
+    minimize = false
+}
+
+task groovydoc(type: Groovydoc, overwrite:true) {
+    source = sourceSets.main.groovy
+    classpath = configurations.compile
+    groovyClasspath = project.configurations.generateDocs
+    include 'com/kazurayam/junit4ks/*'
+    exclude '**/*Test.groovy'
+}
+task publishGroovydoc(type: Copy) {
+    from 'build/docs/groovydoc'
+    into 'docs/api'
+}
+groovydoc.finalizedBy publishGroovydoc

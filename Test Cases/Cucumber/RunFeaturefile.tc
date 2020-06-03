@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login Test offshoreadmin</name>
+   <name>RunFeaturefile</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f7a175aa-5c4c-4002-91d8-45048460a4e8</testCaseGuid>
+   <testCaseGuid>edfdbd3e-c325-4838-b0a3-0c70627f05ea</testCaseGuid>
 </TestCaseEntity>

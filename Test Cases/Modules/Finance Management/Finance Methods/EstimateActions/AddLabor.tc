@@ -5,4 +5,25 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>2667732f-d442-42a9-9360-17b4ff1a02a4</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>76698a18-6099-47f7-bf32-d644f24c5193</id>
+      <masked>false</masked>
+      <name>LaborName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d34d134c-507b-4133-9170-3936595fb89b</id>
+      <masked>false</masked>
+      <name>SOW</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f7d7d942-78a9-41cc-8d59-18e9eda02b38</id>
+      <masked>false</masked>
+      <name>UOM</name>
+   </variable>
 </TestCaseEntity>

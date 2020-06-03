@@ -15,6 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.logging.KeywordLogger
+KeywordLogger logger = new KeywordLogger()
 
 WebUI.openBrowser('')
 
@@ -22,7 +24,7 @@ WebUI.navigateToUrl('https://test.salesforce.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Finance/FullFlowLabor/Page_Login  Salesforce/input_Username_username'), 'thefeela.jo@p2.com.qa1')
+WebUI.setText(findTestObject('Finance/FullFlowLabor/Page_Login  Salesforce/input_Username_username'), 'thefeela.jo@p2.com.regression')
 
 WebUI.setEncryptedText(findTestObject('Finance/FullFlowLabor/Page_Login  Salesforce/input_Password_pw'), '0R0v8FYzmxcuI+dqWgPyZw==')
 
@@ -37,4 +39,4 @@ if (WebUI.verifyElementPresent(findTestObject('Object Repository/GeneralAction/L
 //WebUI.navigateToUrl('https://polaris2--qa2.lightning.force.com/lightning/r/Job__c/a0JL0000004XuaaMAC/view')
 //WebUI.navigateToUrl('https://polaris2--regression.lightning.force.com/lightning/r/Job__c/a0JM00000095BxWMAU/view')
 WebUI.delay(2)
-
+logger.logInfo("Jo login success")

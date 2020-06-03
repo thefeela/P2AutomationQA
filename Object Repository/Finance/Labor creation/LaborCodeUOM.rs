@@ -6,12 +6,11 @@
    <elementGuidId>c0ab269b-769e-45e8-87b0-2402d7314cc0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[${ItemIndex}]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[.//span[text()='UOM']]//following-sibling::div//a</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
