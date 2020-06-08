@@ -23,13 +23,13 @@ Feature: Commercial_job_Creation Flow
   @Commercial_job_Creation
   Scenario Outline:: Commercial job Creation
      Given navigate to Request and Jobs page_CommercialJob
-     When I click on New Job Creation_CommercialJob
-     Then Job creation with <JobCategory> category , <JobType> jobtype and <Subtype> subtype
-     Then I Select the Address_CommercialJob
-     And I Provide Input for CommercialJob
-     Then Click Next after Job Details Entered_CommercialJob
-     Then Verify QuickACtionButtonsJobLevel
-     Then Verify NoOFTasksJobLevel                        
+    # When I click on New Job Creation_CommercialJob
+     #Then Job creation with <JobCategory> category , <JobType> jobtype and <Subtype> subtype
+    # Then I Select the Address_CommercialJob
+    # And I Provide Input for CommercialJob
+    # Then Click Next after Job Details Entered_CommercialJob
+     #Then Verify QuickACtionButtonsJobLevel
+    # Then Verify NoOFTasksJobLevel                        
           Then Verify JobTaskSurvey&QuickButton
           Then Verify SurveyType
 Examples: 

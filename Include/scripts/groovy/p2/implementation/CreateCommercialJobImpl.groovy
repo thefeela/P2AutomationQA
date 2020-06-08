@@ -36,113 +36,114 @@ import p2.action.LoginAction;
 import p2.dataType.TestStepStatus;
 import p2.util.ActionUtils;
 import p2.util.CommonUtils;
-public class CreateCommercialJobImpl  extends P2Base{
-	LoginAction login = new LoginAction();
-	List<TestStepStatus> stepResult = new ArrayList<TestStepStatus>();
-CommercialJobAction commercialJobAction=new CommercialJobAction();
-BettermentJobAction bettermentJobAction=new BettermentJobAction();
-public static String jobtype_Metro;
-public static String jobtype_subtype;
-TestStepStatus result;
-
+import p2.action.CommercialJobAction;
+public class CreateCommercialJobImpl {
+	//List<TestStepStatus> stepResult = new ArrayList<TestStepStatus>();
+	//	//CommercialJobAction commercialJobAction=new CommercialJobAction();
+	//BettermentJobAction bettermentJobAction=new BettermentJobAction();
+	public static String jobtype_Metro;
+	public static String jobtype_subtype;
+	TestStepStatus result;
+	@Keyword
 	public void step1(TestStepStatus status) throws InterruptedException {
-		driverSetup();
-		login.loadUrl(getDriver(), testUrl);
-		login.login(getDriver(), usrName_jo, password_jo);
+		//driverSetup();
+		//login.loadUrl testUrl);
+		//login.login("","");
 		ActionUtils.waitFor5Seconds();
-	
+
 		status.setPass(true);
 		// test.log(Status.PASS,MarkupHelper.createLabel("Login page validated and
 		// loaded successfully", ExtentColor.GREEN));
 		Assert.assertTrue(true);
 	}
-
+	@Keyword
 	public void step2(TestStepStatus status) throws InterruptedException {
-		commercialJobAction.ClickonJobRequest(getDriver());
+		(new p2.action.CommercialJobAction()).ClickonJobRequest();
+		(new p2.action.CommercialJobAction()).ClickonJobRequest( );
 	}
-
+	@Keyword
 	public void step3(TestStepStatus status) throws InterruptedException {
-		commercialJobAction.JobcategoryInputs(getDriver());
+		(new p2.action.CommercialJobAction()).JobcategoryInputs( );
 	}
-
+	@Keyword
 	public void step4(TestStepStatus status) throws InterruptedException {
-		commercialJobAction.selectAddress(getDriver());
+		(new p2.action.CommercialJobAction()).selectAddress( );
 	}
 
+	@Keyword
 	public void step5(TestStepStatus status) throws InterruptedException {
 
 		try {
-			
-			commercialJobAction.provideJobDetails(getDriver(),jobtype_subtype);
+			(new p2.action.CommercialJobAction()).provideJobDetails(jobtype_subtype);
+			//	(new p2.action.CommercialJobAction()).provideJobDetailsjobtype_subtype();
 			if(jobtype_subtype.contains("Fiber")||jobtype_subtype.contains("EoHFC")) {
-				commercialJobAction.connections(getDriver());
+				(new p2.action.CommercialJobAction()).connections( );
 			}
 			/*else {
-				commercialJobAction.connections(getDriver()
-			}
-*/
-				
-				
+			 (new p2.action.CommercialJobAction()).connections( 
+			 }
+			 */
 		} catch (AWTException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
+	@Keyword
 	public TestStepStatus step6(TestStepStatus status) throws InterruptedException {
-		return CommonUtils.verifyQuickActionButtons(getDriver());
-	//	commercialJobAction.verifyJobDetails(getDriver());
+		return CommonUtils.verifyQuickActionButtons( );
+		//	(new p2.action.CommercialJobAction()).verifyJobDetails( );
 	}
 
+	@Keyword
 	public TestStepStatus step7(TestStepStatus status) throws InterruptedException {
 		if(jobtype_Metro.contains("Metro-E")){
-			result=CommonUtils.verifyCommercialMetroConnectionJobTabs(getDriver());
+			result=CommonUtils.verifyCommercialMetroConnectionJobTabs( );
 		}
 		else {
-		 result =CommonUtils.verifyCommercialJobTabs(getDriver());
+			result =CommonUtils.verifyCommercialJobTabs( );
 		}
 		return result;
-		
 	}
+	@Keyword
 	public void step8(TestStepStatus status) throws InterruptedException {
-	//	ActionUtils.waitFor5Seconds();
-	//	commercialJobAction.validateJobDetailsfields(getDriver());
-	
-}
+		//	ActionUtils.waitFor5Seconds();
+		//	(new p2.action.CommercialJobAction()).validateJobDetailsfields( );
+
+	}
+	@Keyword
 	public TestStepStatus step10(TestStepStatus status) throws InterruptedException {
 		ActionUtils.waitFor1Seconds();
-		return CommonUtils.verifyHighlightPanel(getDriver());
-		
-	
-}
+		return CommonUtils.verifyHighlightPanel( );
+	}
+	@Keyword
 	public TestStepStatus step9(TestStepStatus status) throws InterruptedException {
 		//ActionUtils.waitFor1Seconds();
-		TestStepStatus result =CommonUtils.jobActionButtonValidation(getDriver());
-	getDriver().quit();
-	return result;
-		
-	
-}
+		TestStepStatus result =CommonUtils.jobActionButtonValidation( );
+		// .quit();
+		return result;
+
+
+	}
+	@Keyword
 	public void step11(TestStepStatus status) throws InterruptedException {
 		ActionUtils.waitFor3Seconds();
-		commercialJobAction.JobUploadAction(getDriver());
-	
-}
+		(new p2.action.CommercialJobAction()).JobUploadAction( );
+	}
+	@Keyword
 	public void Job_Commercial_WithoutSubtype(TestStepStatus step3Status, String jobtype) {
 		//ActionUtils.waitFor2Seconds();
 		jobtype_Metro=jobtype;
 		jobtype_subtype="NA";
-		commercialJobAction.Job_Commercial_WithoutSubtype(getDriver(),jobtype);
-		
+		(new p2.action.CommercialJobAction()).Job_Commercial_WithoutSubtype(jobtype);
+
 	}
+	@Keyword
 	public void Job_Commercial_WithSubtype(TestStepStatus step3Status,  String jobtype, String subtype) {
 		//ActionUtils.waitFor2Seconds();
 		jobtype_subtype=subtype;
 		jobtype_Metro=jobtype;
-		commercialJobAction.Job_Commercial_WithSubtype(getDriver(),jobtype,subtype);
-		
+		(new p2.action.CommercialJobAction()).Job_Commercial_WithSubtype(jobtype,subtype);
+
 	}
-
-
-
 }

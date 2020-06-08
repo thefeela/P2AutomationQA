@@ -36,15 +36,19 @@ import p2.dataType.TestStepStatus;
 import  p2.util.ActionUtils;
 import  p2.util.CommonUtils;
 
-
-public class CommercialJobActionEFibre extends P2Base{
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+public class CommercialJobActionEFibre {
 	boolean flag;
 	private static Logger logger = LogManager.getLogger(BettermentJobAction.class.getCanonicalName());
 	public static boolean SubTypeOrWithout = false;
 	public static String Jobtype = "";
 	public static String Subtype = "";
 
-	public void ClickonJobRequest(RemoteWebDriver driver) {
+	@Keyword
+	public void ClickonJobRequest( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		System.out.println("Request getting text - Before 10 sec");
 		ActionUtils.waitFor5Seconds();
 		ActionUtils.waitFor1Seconds();
@@ -53,8 +57,9 @@ public class CommercialJobActionEFibre extends P2Base{
 		driver.findElement(By.xpath(JobcategoryInputParameters.getnextbutton())).click();
 		ActionUtils.waitFor2Seconds();
 	}
-
-	public void JobcategoryInputs(RemoteWebDriver driver) {
+	@Keyword
+	public void JobcategoryInputs( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		driver.findElements(By.cssSelector(JobcategoryInputParameters.getcategory_select())).get(0).click();
 		ActionUtils.waitFor1Seconds();
 		driver.findElement(By.cssSelector(JobcategoryInputParameters.getoption_category())).click();
@@ -69,7 +74,7 @@ public class CommercialJobActionEFibre extends P2Base{
 	}
 
 	/*
-	 * public void JobcategoryBettermentsSpanReplacementInputs(RemoteWebDriver
+	 * @Keyword public void JobcategoryBettermentsSpanReplacementInputs(RemoteWebDriver
 	 * driver) { driver.findElements(By.cssSelector(JobcategoryInputParameters.
 	 * getcategory_select())).get(0).click(); ActionUtils.waitFor1Seconds(); //
 	 * driver.findElement(By.cssSelector(JobcategoryInputParameters.
@@ -85,11 +90,13 @@ public class CommercialJobActionEFibre extends P2Base{
 	 * driver.findElement(By.xpath(JobcategoryInputParameters.getnext_categorybutton
 	 * ())).click(); }
 	 */
-	public void selectAddress(RemoteWebDriver driver) {
+	@Keyword
+	public void selectAddress( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		ActionUtils.waitFor3Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getinputaddress())).click();
+		//driver.findElement(By.cssSelector(JobcategoryInputParameters.getinputaddress())).click();
 		ActionUtils.waitFor2Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getinputaddress_click()))
+		driver.findElement(By.xpath(JobcategoryInputParameters.getinputaddress_click()))
 				.sendKeys(JobcategoryInputParameters.getinputaddress_value());
 		ActionUtils.waitFor2Seconds();
 		// ActionUtils.waitFor3Seconds();
@@ -99,24 +106,26 @@ public class CommercialJobActionEFibre extends P2Base{
 		ActionUtils.waitFor1Seconds();
 	}
 
-	public void provideJobDetails(RemoteWebDriver driver, String subtype) throws AWTException {
+	@Keyword
+	public void provideJobDetails(  String subtype) throws AWTException {
+		WebDriver driver = DriverFactory.getWebDriver();
 		System.out.println("Entered into the Provide job details");
 		ActionUtils.waitFor5Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getinitiatedBy())).click();
+		driver.findElement(By.xpath(JobcategoryInputParameters.getinitiatedBy())).click();
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getinitiatedBy()))
+		driver.findElement(By.xpath(JobcategoryInputParameters.getinitiatedBy()))
 				.sendKeys(JobcategoryInputParameters.getintiatedby_value());
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getinitiatedByEmail())).click();
+		driver.findElement(By.xpath(JobcategoryInputParameters.getinitiatedByEmail())).click();
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getinitiatedByEmail()))
+		driver.findElement(By.xpath(JobcategoryInputParameters.getinitiatedByEmail()))
 				.sendKeys(JobcategoryInputParameters.getintiatedbyid_value());
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getExternalid())).click();
+		driver.findElement(By.xpath(JobcategoryInputParameters.getExternalid())).click();
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getExternalid())).sendKeys("1234");
+		driver.findElement(By.xpath(JobcategoryInputParameters.getExternalid())).sendKeys("1234");
 		ActionUtils.waitFor1Seconds();
-		WebElement ele = driver.findElement(By.cssSelector(JobcategoryInputParameters.getsitedevelopmentpropname()));
+		WebElement ele = driver.findElement(By.xpath(JobcategoryInputParameters.getsitedevelopmentpropname()));
 		System.out.println("Element value is " + ele.getText());
 		ActionUtils.waitFor1Seconds();
 		Actions actionslist = new Actions(driver);
@@ -127,17 +136,17 @@ public class CommercialJobActionEFibre extends P2Base{
 
 		js.executeScript("arguments[0].scrollIntoView();", ele);
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getcustomername())).click();
+		driver.findElement(By.xpath(JobcategoryInputParameters.getcustomername())).click();
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getcustomername()))
+		driver.findElement(By.xpath(JobcategoryInputParameters.getcustomername()))
 				.sendKeys(JobcategoryInputParameters.getCustomernamevalue());
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getsitedevelopmentpropname())).click();
+		driver.findElement(By.xpath(JobcategoryInputParameters.getsitedevelopmentpropname())).click();
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getsitedevelopmentpropname()))
+		driver.findElement(By.xpath(JobcategoryInputParameters.getsitedevelopmentpropname()))
 				.sendKeys(JobcategoryInputParameters.getSite_Development_value());
 		ActionUtils.waitFor1Seconds();
-		WebElement element = driver.findElement(By.cssSelector(JobcategoryInputParameters.getlocalcontactname()));
+		WebElement element = driver.findElement(By.xpath(JobcategoryInputParameters.getlocalcontactname()));
 		System.out.println("Element value is " + element.getText());
 		ActionUtils.waitFor1Seconds();
 		Actions actionslist1 = new Actions(driver);
@@ -148,9 +157,9 @@ public class CommercialJobActionEFibre extends P2Base{
 
 		js1.executeScript("arguments[0].scrollIntoView();", element);
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getlocalcontactname())).click();
+		driver.findElement(By.xpath(JobcategoryInputParameters.getlocalcontactname())).click();
 		ActionUtils.waitFor1Seconds();
-		driver.findElement(By.cssSelector(JobcategoryInputParameters.getlocalcontactname()))
+		driver.findElement(By.xpath(JobcategoryInputParameters.getlocalcontactname()))
 				.sendKeys(JobcategoryInputParameters.getcustomer_Contact_value());
 		ActionUtils.waitFor1Seconds();
 
@@ -162,9 +171,9 @@ public class CommercialJobActionEFibre extends P2Base{
 		 * getcustomer_contact_email_value()); ActionUtils.waitFor2Seconds();
 		 */
 
-		driver.findElements(By.cssSelector(JobcategoryInputParameters.getlocalcontactphone())).get(16).sendKeys("123");
-		driver.findElements(By.cssSelector(JobcategoryInputParameters.getlocalcontactphone())).get(17).sendKeys("456");
-		driver.findElements(By.cssSelector(JobcategoryInputParameters.getlocalcontactphone())).get(18).sendKeys("7890");
+		driver.findElements(By.xpath(JobcategoryInputParameters.getlocalcontactphone())).get(18).sendKeys("123");
+		driver.findElements(By.xpath(JobcategoryInputParameters.getlocalcontactphone())).get(19).sendKeys("456");
+		driver.findElements(By.xpath(JobcategoryInputParameters.getlocalcontactphone())).get(20).sendKeys("7890");
 
 		driver.findElements(By.cssSelector(JobcategoryInputParameters.getCustomerdropdown())).get(0).click();
 		ActionUtils.waitFor1Seconds();
@@ -186,7 +195,7 @@ public class CommercialJobActionEFibre extends P2Base{
 		ActionUtils.waitFor1Seconds();
 
 		WebElement element1 = driver
-				.findElements(By.cssSelector(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(20);
+				.findElements(By.xpath(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(0);
 		System.out.println("Element value is " + element1.getText());
 		ActionUtils.waitFor1Seconds();
 		Actions actionslist2 = new Actions(driver);
@@ -199,13 +208,13 @@ public class CommercialJobActionEFibre extends P2Base{
 		 * js1.executeScript("arguments[0].scrollIntoView();", element1);
 		 */ ActionUtils.waitFor1Seconds();
 
-		driver.findElements(By.cssSelector(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(20)
+		driver.findElements(By.xpath(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(0)
 				.sendKeys(JobcategoryInputParameters.gettotalPrePostCalcJobFlow_value1());
 		ActionUtils.waitFor1Seconds();
-		driver.findElements(By.cssSelector(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(21)
+		driver.findElements(By.xpath(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(1)
 				.sendKeys(JobcategoryInputParameters.gettotalPrePostCalcJobFlow_value2());
 		ActionUtils.waitFor1Seconds();
-		driver.findElements(By.cssSelector(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(22)
+		driver.findElements(By.xpath(JobcategoryInputParameters.gettotalPrePostCalcJobFlow())).get(2)
 				.sendKeys(JobcategoryInputParameters.gettotalPrePostCalcJobFlow_value3());
 		ActionUtils.waitFor2Seconds();
 		WebElement element2 = driver.findElements(By.cssSelector("div[class='slds-grid slds-wrap']")).get(12);
@@ -214,15 +223,15 @@ public class CommercialJobActionEFibre extends P2Base{
 		actionslist3.moveToElement(element2).click().perform();
 		System.out.println("At cifa");
 		ActionUtils.waitFor3Seconds();
-		driver.findElements(By.cssSelector("input[type='search']")).get(3).click();
+		driver.findElements(By.xpath("//*[text()='CIFA Warehouse']//following-sibling::div/input")).get(0).click();
 		ActionUtils.waitFor3Seconds();
-		driver.findElements(By.cssSelector("input[type='search']")).get(3)
+		driver.findElements(By.xpath("//*[text()='CIFA Warehouse']//following-sibling::div/input")).get(0)
 				.sendKeys(JobcategoryInputParameters.getcifawarehouse_value());
 		ActionUtils.waitFor3Seconds();
-		driver.findElements(By.cssSelector("input[type='search']")).get(3).sendKeys("4");
+		driver.findElements(By.xpath("//*[text()='CIFA Warehouse']//following-sibling::div/input")).get(0).sendKeys("4");
 		ActionUtils.waitFor5Seconds();
 
-		driver.findElement(By.cssSelector("span[class='slds-radio_faux']")).click();
+		driver.findElement(By.xpath("//span[@class='slds-radio_faux']")).click();
 		// driver.findElement(By.xpath("//*[@id=\"modal-content-id-1\"]/article/div/div[2]/div/div/div[4]/div[1]/div/div[2]/lightning-datatable/div[2]/div/div/div/table/tbody/tr/td[1]/lightning-primitive-cell-checkbox/span/label/span[1]")).click();
 		ActionUtils.waitFor5Seconds();
 
@@ -233,8 +242,9 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public void connections(RemoteWebDriver driver) {
-
+	@Keyword
+	public void connections( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		driver.findElement(
 				By.cssSelector("input[class='slds-input input uiInput uiInputText uiInput--default uiInput--input']"))
 				.click();
@@ -254,7 +264,9 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public void uploadnext(RemoteWebDriver driver) {
+	@Keyword
+	public void uploadnext( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		// slds-button slds-button_brand
 		ActionUtils.waitFor2Seconds();
 		// driver.findElement(By.xpath("//*[@id=\"modal-content-id-1\"]/article/div/div[2]/div/div/div[2]/button")).click();
@@ -266,8 +278,9 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public void scrollbartosavebutton(RemoteWebDriver driver) {
-
+	@Keyword
+	public void scrollbartosavebutton( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		WebElement ele = driver.findElement(By.cssSelector(JobcategoryInputParameters.getscrolldown()));
 		System.out.println("Element value is " + ele.getText());
 		ActionUtils.waitFor1Seconds();
@@ -277,7 +290,9 @@ public class CommercialJobActionEFibre extends P2Base{
 		ActionUtils.waitFor1Seconds();
 	}
 
-	public void verifyJobDetails(RemoteWebDriver driver) {
+	@Keyword
+	public void verifyJobDetails( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		ActionUtils.waitFor5Seconds();
 		driver.findElements(By.cssSelector(JobcategoryInputParameters.getmore())).get(5).click();
 		ActionUtils.waitFor5Seconds();
@@ -288,62 +303,63 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public boolean validateJobDetailsfields(RemoteWebDriver driver) {
+	@Keyword public boolean validateJobDetailsfields( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(0)
-				.isDisplayed()) {
+		.isDisplayed()) {
 			logger.info("JOb id loaded in the details page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(0)
-							.isDisplayed());
+					.isDisplayed());
 			if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields())).get(0)
-					.isDisplayed()) {
+			.isDisplayed()) {
 				logger.info("Owner loaded in the details page"
 						+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-								.get(0).isDisplayed());
+						.get(0).isDisplayed());
 				if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(3)
-						.getAttribute("innerText").contains(CommonUtils.endDate())) {
+				.getAttribute("innerText").contains(CommonUtils.endDate())) {
 					logger.info("Need by date loaded in the details page"
 							+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(3).getAttribute("innerText"));
+							.get(3).getAttribute("innerText"));
 					if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-							.get(2).getAttribute("innerText").contains(JobcategoryInputParameters.getUnfunded_Text())) {
+					.get(2).getAttribute("innerText").contains(JobcategoryInputParameters.getUnfunded_Text())) {
 						logger.info("Funding Request Status in the details page" + driver
 								.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
 								.get(2).getAttribute("innerText"));
 						if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-								.get(4).getAttribute("innerText")
-								.contains(JobcategoryInputParameters.getDescription_check())) {
+						.get(4).getAttribute("innerText")
+						.contains(JobcategoryInputParameters.getDescription_check())) {
 							logger.info("Description in the details page" + driver
 									.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 									.get(4).getAttribute("innerText"));
 							if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(7).getAttribute("innerText")
-									.contains(JobcategoryInputParameters.getcommentsField_value())) {
+							.get(7).getAttribute("innerText")
+							.contains(JobcategoryInputParameters.getcommentsField_value())) {
 								logger.info("comments loaded in the details page" + driver
 										.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 										.get(7).getAttribute("innerText"));
 								if (driver
-										.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-										.get(8).getAttribute("innerText")
-										.contains(JobcategoryInputParameters.getcifawarehouse_value())) {
+								.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+								.get(8).getAttribute("innerText")
+								.contains(JobcategoryInputParameters.getcifawarehouse_value())) {
 									logger.info("cifa loaded in the details page" + driver
 											.findElements(
-													By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+											By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 											.get(8).getAttribute("innerText"));
 									if (driver
-											.findElements(
-													By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-											.get(9).getAttribute("innerText")
-											.contains(JobcategoryInputParameters.getlaborZone())) {
+									.findElements(
+									By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+									.get(9).getAttribute("innerText")
+									.contains(JobcategoryInputParameters.getlaborZone())) {
 										logger.info("Labor Zone loaded in the details page" + driver
 												.findElements(By
-														.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+												.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 												.get(9).getAttribute("innerText"));
 										flag = true;
 
 									} else {
 										logger.info("Labor Zone  Not loaded in the details page" + driver
 												.findElements(By
-														.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+												.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 												.get(13).isDisplayed());
 										flag = false;
 
@@ -351,7 +367,7 @@ public class CommercialJobActionEFibre extends P2Base{
 								} else {
 									logger.info("cifa Not loaded in the details page" + driver
 											.findElements(
-													By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+											By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 											.get(11).isDisplayed());
 									flag = false;
 								}
@@ -377,26 +393,27 @@ public class CommercialJobActionEFibre extends P2Base{
 				} else {
 					logger.info("Need by date Not loaded in the details page"
 							+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(4).isDisplayed());
+							.get(4).isDisplayed());
 					flag = false;
 				}
 			} else {
 				logger.info("Owner Not loaded in the details page"
 						+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(1)
-								.isDisplayed());
+						.isDisplayed());
 				flag = false;
 			}
 		} else {
 			logger.info("JOb id Not loaded in the details page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(0)
-							.isDisplayed());
+					.isDisplayed());
 			flag = false;
 
 		}
 		return flag;
 	}
 
-	public boolean verifyclassification(RemoteWebDriver driver) {
+	@Keyword public boolean verifyclassification( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		if (SubTypeOrWithout == true) {
 			return verifyclassificationBettermentsSubtype(driver);
 		} else {
@@ -404,7 +421,8 @@ public class CommercialJobActionEFibre extends P2Base{
 		}
 	}
 
-	public boolean verifyclassificationBettermentsSubtype(RemoteWebDriver driver) {
+	@Keyword public boolean verifyclassificationBettermentsSubtype( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		System.out.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(0)
 				.getAttribute("innerText"));
 
@@ -439,160 +457,160 @@ public class CommercialJobActionEFibre extends P2Base{
 
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(0).getAttribute("innerText") + " dummy");
+				.get(0).getAttribute("innerText") + " dummy");
 
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(37).getAttribute("innerText"));
+				.get(37).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(35).getAttribute("innerText"));
+				.get(35).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(36).getAttribute("innerText"));
+				.get(36).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(38).getAttribute("innerText"));
+				.get(38).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(39).getAttribute("innerText") + " dummy");
+				.get(39).getAttribute("innerText") + " dummy");
 		boolean main = false;
 		if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields())).get(36)
-				.getAttribute("innerText").equals("Betterments")) {
+		.getAttribute("innerText").equals("Betterments")) {
 			logger.info("Job category in the details page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-							.get(36).getAttribute("innerText"));
+					.get(36).getAttribute("innerText"));
 			if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields())).get(37)
-					.getAttribute("innerText").equals(BettermentJobAction.Jobtype)) {
+			.getAttribute("innerText").equals(BettermentJobAction.Jobtype)) {
 				logger.info("JobType in the details page"
 						+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-								.get(37).getAttribute("innerText"));
+						.get(37).getAttribute("innerText"));
 				if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(66)
-						.getAttribute("innerText").equals(BettermentJobAction.Subtype)) {
+				.getAttribute("innerText").equals(BettermentJobAction.Subtype)) {
 					logger.info("JobSubType in the details page"
 							+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(66).getAttribute("innerText"));
+							.get(66).getAttribute("innerText"));
 					if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(68)
-							.isDisplayed()) {
+					.isDisplayed()) {
 						logger.info("Division in the details page"
 								+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-										.get(68).isDisplayed());
+								.get(68).isDisplayed());
 						if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-								.get(69).isDisplayed()) {
+						.get(69).isDisplayed()) {
 							logger.info("Region in the details page" + driver
 									.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 									.get(69).isDisplayed());
 							if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(70).isDisplayed()) {
+							.get(70).isDisplayed()) {
 								logger.info("Market in the details page" + driver
 										.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 										.get(70).isDisplayed());
 								if (driver
-										.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-										.get(71).isDisplayed()) {
+								.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+								.get(71).isDisplayed()) {
 									logger.info("Area in the details page" + driver
 											.findElements(
-													By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+											By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 											.get(71).isDisplayed());
 									if (driver
-											.findElements(By.cssSelector(
-													JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-											.get(38).isDisplayed()) {
+									.findElements(By.cssSelector(
+									JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
+									.get(38).isDisplayed()) {
 
 										logger.info("Default Spa in the details page" + driver
 												.findElements(By.cssSelector(
-														JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
+												JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
 												.get(38).isDisplayed());
 										if (driver
-												.findElements(By
-														.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-												.get(72).isDisplayed()) {
+										.findElements(By
+										.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+										.get(72).isDisplayed()) {
 											logger.info("Principle in the details page" + driver
 													.findElements(By.cssSelector(
-															JobcategoryInputParameters.getvalidatejobfields()))
+													JobcategoryInputParameters.getvalidatejobfields()))
 													.get(72).isDisplayed());
 											if (driver
-													.findElements(By.cssSelector(
-															JobcategoryInputParameters.getvalidatejobfields()))
-													.get(73).isDisplayed()) {
+											.findElements(By.cssSelector(
+											JobcategoryInputParameters.getvalidatejobfields()))
+											.get(73).isDisplayed()) {
 												logger.info("System in the details page" + driver
 														.findElements(By.cssSelector(
-																JobcategoryInputParameters.getvalidatejobfields()))
+														JobcategoryInputParameters.getvalidatejobfields()))
 														.get(73).isDisplayed());
 												if (driver
-														.findElements(By.cssSelector(
-																JobcategoryInputParameters.getvalidatejobfields()))
-														.get(74).isDisplayed()) {
+												.findElements(By.cssSelector(
+												JobcategoryInputParameters.getvalidatejobfields()))
+												.get(74).isDisplayed()) {
 													logger.info("Agent in the details page" + driver
 															.findElements(By.cssSelector(
-																	JobcategoryInputParameters.getvalidatejobfields()))
+															JobcategoryInputParameters.getvalidatejobfields()))
 															.get(74).isDisplayed());
 													if (driver
-															.findElements(By.cssSelector(JobcategoryInputParameters
-																	.getvalidateReadOnlyJobFields()))
-															.get(40).isDisplayed()) {
+													.findElements(By.cssSelector(JobcategoryInputParameters
+													.getvalidateReadOnlyJobFields()))
+													.get(40).isDisplayed()) {
 														logger.info("Created By in the details page" + driver
 																.findElements(By.cssSelector(JobcategoryInputParameters
-																		.getvalidateReadOnlyJobFields()))
+																.getvalidateReadOnlyJobFields()))
 																.get(40).isDisplayed());
 														if (driver
-																.findElements(By.cssSelector(JobcategoryInputParameters
-																		.getvalidateReadOnlyJobFields()))
-																.get(39).isDisplayed()) {
+														.findElements(By.cssSelector(JobcategoryInputParameters
+														.getvalidateReadOnlyJobFields()))
+														.get(39).isDisplayed()) {
 															logger.info("Last Modified  By in the details page" + driver
 																	.findElements(
-																			By.cssSelector(JobcategoryInputParameters
-																					.getvalidateReadOnlyJobFields()))
+																	By.cssSelector(JobcategoryInputParameters
+																	.getvalidateReadOnlyJobFields()))
 																	.get(39).isDisplayed());
 															flag = true;
 														} else {
 															logger.info(
 																	"Last Modified  By Not loaded  in the details page"
-																			+ driver.findElements(By.cssSelector(
-																					JobcategoryInputParameters
-																							.getvalidateReadOnlyJobFields()))
-																					.get(39).isDisplayed());
+																	+ driver.findElements(By.cssSelector(
+																	JobcategoryInputParameters
+																	.getvalidateReadOnlyJobFields()))
+																	.get(39).isDisplayed());
 															flag = false;
 														}
 													} else {
 														logger.info("Created By Not loaded in the details page" + driver
 																.findElements(By.cssSelector(JobcategoryInputParameters
-																		.getvalidateReadOnlyJobFields()))
+																.getvalidateReadOnlyJobFields()))
 																.get(40).isDisplayed());
 														flag = false;
 													}
 												} else {
 													logger.info("Agent Not loaded  in the details page" + driver
 															.findElements(By.cssSelector(
-																	JobcategoryInputParameters.getvalidatejobfields()))
+															JobcategoryInputParameters.getvalidatejobfields()))
 															.get(74).isDisplayed());
 													flag = false;
 												}
 											} else {
 												logger.info("System Not loaded  in the details page" + driver
 														.findElements(By.cssSelector(
-																JobcategoryInputParameters.getvalidatejobfields()))
+														JobcategoryInputParameters.getvalidatejobfields()))
 														.get(73).isDisplayed());
 												flag = false;
 											}
 										} else {
 											logger.info("Principle Not loaded  in the details page" + driver
 													.findElements(By.cssSelector(
-															JobcategoryInputParameters.getvalidatejobfields()))
+													JobcategoryInputParameters.getvalidatejobfields()))
 													.get(72).isDisplayed());
 											flag = false;
 										}
 									} else {
 										logger.info("Default Spa Not loaded  in the details page" + driver
 												.findElements(By.cssSelector(
-														JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
+												JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
 												.get(38).isDisplayed());
 										flag = false;
 									}
 								} else {
 									logger.info("Area Not loaded  in the details page" + driver
 											.findElements(
-													By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+											By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 											.get(71).isDisplayed());
 									flag = false;
 								}
@@ -611,33 +629,35 @@ public class CommercialJobActionEFibre extends P2Base{
 					} else {
 						logger.info("Division Not loaded  in the details page"
 								+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-										.get(68).isDisplayed());
+								.get(68).isDisplayed());
 						flag = false;
 					}
 				} else {
 					logger.info("JobSubType  Not loaded  in the details page"
 							+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(66).isDisplayed());
+							.get(66).isDisplayed());
 					flag = false;
 				}
 			} else {
 				logger.info("Job Type Not loaded in the details page"
 						+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-								.get(37).isDisplayed());
+						.get(37).isDisplayed());
 				flag = false;
 			}
 
 		} else {
 			logger.info("Job Category  Not loaded  in the details page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-							.get(36).isDisplayed());
+					.get(36).isDisplayed());
 			flag = false;
 		}
 
 		return flag;
 	}
 
-	public boolean verifyclassificationBettermentsWithoutSubtype(RemoteWebDriver driver) {
+	@Keyword
+	public boolean verifyclassificationBettermentsWithoutSubtype( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		System.out.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(0)
 				.getAttribute("innerText"));
 
@@ -669,140 +689,140 @@ public class CommercialJobActionEFibre extends P2Base{
 				.get(74).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(0).getAttribute("innerText") + " dummy");
+				.get(0).getAttribute("innerText") + " dummy");
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(38).getAttribute("innerText"));
+				.get(38).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(37).getAttribute("innerText"));
+				.get(37).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(36).getAttribute("innerText"));
+				.get(36).getAttribute("innerText"));
 		System.out
 				.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-						.get(39).getAttribute("innerText") + " dummy");
+				.get(39).getAttribute("innerText") + " dummy");
 		boolean main = false;
 		if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields())).get(36)
-				.getAttribute("innerText").equals("Betterments")) {
+		.getAttribute("innerText").equals("Betterments")) {
 			logger.info("Job category in the details page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-							.get(36).getAttribute("innerText"));
+					.get(36).getAttribute("innerText"));
 			if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields())).get(37)
-					.getAttribute("innerText").equals(BettermentJobAction.Jobtype)) {
+			.getAttribute("innerText").equals(BettermentJobAction.Jobtype)) {
 				logger.info("JobType in the details page"
 						+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-								.get(37).getAttribute("innerText"));
+						.get(37).getAttribute("innerText"));
 				if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(68)
-						.isDisplayed()) {
+				.isDisplayed()) {
 					logger.info("Division in the details page"
 							+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(68).isDisplayed());
+							.get(68).isDisplayed());
 					if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(69)
-							.isDisplayed()) {
+					.isDisplayed()) {
 						logger.info("Region in the details page"
 								+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-										.get(69).isDisplayed());
+								.get(69).isDisplayed());
 						if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-								.get(70).isDisplayed()) {
+						.get(70).isDisplayed()) {
 							logger.info("Market in the details page" + driver
 									.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 									.get(70).isDisplayed());
 							if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(71).isDisplayed()) {
+							.get(71).isDisplayed()) {
 								logger.info("Area in the details page" + driver
 										.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 										.get(71).isDisplayed());
 								if (driver
-										.findElements(By
-												.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-										.get(38).isDisplayed()) {
+								.findElements(By
+								.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
+								.get(38).isDisplayed()) {
 
 									logger.info("Default Spa in the details page" + driver
 											.findElements(By.cssSelector(
-													JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
+											JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
 											.get(38).isDisplayed());
 									if (driver
-											.findElements(
-													By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-											.get(72).isDisplayed()) {
+									.findElements(
+									By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+									.get(72).isDisplayed()) {
 										logger.info("Principle in the details page" + driver
 												.findElements(By
-														.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+												.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 												.get(72).isDisplayed());
 										if (driver
-												.findElements(By
-														.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-												.get(73).isDisplayed()) {
+										.findElements(By
+										.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+										.get(73).isDisplayed()) {
 											logger.info("System in the details page" + driver
 													.findElements(By.cssSelector(
-															JobcategoryInputParameters.getvalidatejobfields()))
+													JobcategoryInputParameters.getvalidatejobfields()))
 													.get(73).isDisplayed());
 											if (driver
-													.findElements(By.cssSelector(
-															JobcategoryInputParameters.getvalidatejobfields()))
-													.get(74).isDisplayed()) {
+											.findElements(By.cssSelector(
+											JobcategoryInputParameters.getvalidatejobfields()))
+											.get(74).isDisplayed()) {
 												logger.info("Agent in the details page" + driver
 														.findElements(By.cssSelector(
-																JobcategoryInputParameters.getvalidatejobfields()))
+														JobcategoryInputParameters.getvalidatejobfields()))
 														.get(74).isDisplayed());
 												if (driver
-														.findElements(By.cssSelector(JobcategoryInputParameters
-																.getvalidateReadOnlyJobFields()))
-														.get(40).isDisplayed()) {
+												.findElements(By.cssSelector(JobcategoryInputParameters
+												.getvalidateReadOnlyJobFields()))
+												.get(40).isDisplayed()) {
 													logger.info("Created By in the details page" + driver
 															.findElements(By.cssSelector(JobcategoryInputParameters
-																	.getvalidateReadOnlyJobFields()))
+															.getvalidateReadOnlyJobFields()))
 															.get(40).isDisplayed());
 													if (driver
-															.findElements(By.cssSelector(JobcategoryInputParameters
-																	.getvalidateReadOnlyJobFields()))
-															.get(39).isDisplayed()) {
+													.findElements(By.cssSelector(JobcategoryInputParameters
+													.getvalidateReadOnlyJobFields()))
+													.get(39).isDisplayed()) {
 														logger.info("Last Modified  By in the details page" + driver
 																.findElements(By.cssSelector(JobcategoryInputParameters
-																		.getvalidateReadOnlyJobFields()))
+																.getvalidateReadOnlyJobFields()))
 																.get(39).isDisplayed());
 														flag = true;
 													} else {
 														logger.info("Last Modified  By Not loaded  in the details page"
 																+ driver.findElements(
-																		By.cssSelector(JobcategoryInputParameters
-																				.getvalidateReadOnlyJobFields()))
-																		.get(39).isDisplayed());
+																By.cssSelector(JobcategoryInputParameters
+																.getvalidateReadOnlyJobFields()))
+																.get(39).isDisplayed());
 														flag = false;
 													}
 												} else {
 													logger.info("Created By Not loaded in the details page" + driver
 															.findElements(By.cssSelector(JobcategoryInputParameters
-																	.getvalidateReadOnlyJobFields()))
+															.getvalidateReadOnlyJobFields()))
 															.get(40).isDisplayed());
 													flag = false;
 												}
 											} else {
 												logger.info("Agent Not loaded  in the details page" + driver
 														.findElements(By.cssSelector(
-																JobcategoryInputParameters.getvalidatejobfields()))
+														JobcategoryInputParameters.getvalidatejobfields()))
 														.get(74).isDisplayed());
 												flag = false;
 											}
 										} else {
 											logger.info("System Not loaded  in the details page" + driver
 													.findElements(By.cssSelector(
-															JobcategoryInputParameters.getvalidatejobfields()))
+													JobcategoryInputParameters.getvalidatejobfields()))
 													.get(73).isDisplayed());
 											flag = false;
 										}
 									} else {
 										logger.info("Principle Not loaded  in the details page" + driver
 												.findElements(By
-														.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
+												.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
 												.get(72).isDisplayed());
 										flag = false;
 									}
 								} else {
 									logger.info("Default Spa Not loaded  in the details page" + driver
 											.findElements(By.cssSelector(
-													JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
+											JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
 											.get(38).isDisplayed());
 									flag = false;
 								}
@@ -821,34 +841,36 @@ public class CommercialJobActionEFibre extends P2Base{
 					} else {
 						logger.info("Region Not loaded  in the details page"
 								+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-										.get(69).isDisplayed());
+								.get(69).isDisplayed());
 						flag = false;
 					}
 				} else {
 					logger.info("Division Not loaded  in the details page"
 							+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
-									.get(68).isDisplayed());
+							.get(68).isDisplayed());
 					flag = false;
 				}
 
 			} else {
 				logger.info("JobType Not loaded in the details page"
 						+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-								.get(37).isDisplayed());
+						.get(37).isDisplayed());
 				flag = false;
 			}
 
 		} else {
 			logger.info("Job Category  Not loaded  in the details page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidateReadOnlyJobFields()))
-							.get(36).isDisplayed());
+					.get(36).isDisplayed());
 			flag = false;
 		}
 
 		return flag;
 	}
 
-	public boolean verifyHighlightPanel(RemoteWebDriver driver) {
+	@Keyword
+	public boolean verifyHighlightPanel( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		driver.navigate().refresh();
 		ActionUtils.waitFor5Seconds();
 		System.out.println(driver.findElements(By.cssSelector("div[class='slds-form-element__static slds-truncate']"))
@@ -865,22 +887,22 @@ public class CommercialJobActionEFibre extends P2Base{
 				.get(5).getText());
 
 		if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelFieldTextArea()))
-				.get(0).isDisplayed()) {
+		.get(0).isDisplayed()) {
 			if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelFieldTextArea()))
-					.get(1).getText().contains(JobcategoryInputParameters.getUnfunded())) {
+			.get(1).getText().contains(JobcategoryInputParameters.getUnfunded())) {
 				if (driver
-						.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelFieldTextArea()))
-						.get(2).getText().contains(JobcategoryInputParameters.getOpened())) {
+				.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelFieldTextArea()))
+				.get(2).getText().contains(JobcategoryInputParameters.getOpened())) {
 					if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelText()))
-							.get(0).isDisplayed()) {
+					.get(0).isDisplayed()) {
 						if (driver
-								.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelText()))
-								.get(1).isDisplayed()) {
+						.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelText()))
+						.get(1).isDisplayed()) {
 							flag = true;
 						} else {
 							logger.info("Description Not loaded  in the Job page" + driver
 									.findElements(
-											By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelText()))
+									By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelText()))
 									.get(1).isDisplayed());
 							flag = false;
 						}
@@ -894,7 +916,7 @@ public class CommercialJobActionEFibre extends P2Base{
 				} else {
 					logger.info("Status Not loaded  in the Job page" + driver
 							.findElements(
-									By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelFieldTextArea()))
+							By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelFieldTextArea()))
 							.get(2).isDisplayed());
 					flag = false;
 
@@ -909,7 +931,7 @@ public class CommercialJobActionEFibre extends P2Base{
 		} else {
 			logger.info("Job Type Not loaded  in the Job page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getverifyHighlightPanelText()))
-							.get(1).isDisplayed());
+					.get(1).isDisplayed());
 			flag = false;
 		}
 
@@ -917,110 +939,111 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public static TestStepStatus jobActionButtonValidation(RemoteWebDriver driver) {
+	@Keyword
+	public static TestStepStatus jobActionButtonValidation(RemoteWebDriver driverremote) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		boolean flag = false;
+		WebDriver	driver1= DriverFactory.getWebDriver();
 		TestStepStatus testStepStatus = new TestStepStatus();
+
 		System.out.println("values in the compact layout is--"
-				+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getjobActionButtonValidation())).get(0)
-						.getText());
-		if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getedit_compactlayot())).getText()
-				.equals(JobcategoryInputParameters.getEdit())) {
-			if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getchangedate_compactlayot())).getText()
-					.equals(JobcategoryInputParameters.getChangeDate())) {
-				if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getMaterials_compactlayot())).getText()
-						.equals(JobcategoryInputParameters.getAddMaterials())) {
-					if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getContract_compactlayot()))
-							.getText().equals(JobcategoryInputParameters.getAddContractLabor())) {
-						if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getFootage_compactlayot()))
-								.getText().equals(JobcategoryInputParameters.getAddConstructedFootage())) {
-							if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getHold_compactlayot()))
-									.getText().equals(JobcategoryInputParameters.getHold_Unhold())) {
-								if (driver
-										.findElement(By.cssSelector(JobcategoryInputParameters.getclose_compactlayot()))
-										.getText().equals(JobcategoryInputParameters.getClose())) {
-									if (driver
-											.findElement(By
-													.cssSelector(JobcategoryInputParameters.getapproval_compactlayot()))
-											.getText().equals(JobcategoryInputParameters.getSubmit_for_Approval())) {
-										if (driver
-												.findElement(By.cssSelector(
-														JobcategoryInputParameters.getcancel_compactlayot()))
-												.getText().equals(JobcategoryInputParameters.getCancel())) {
+				+ driver1.findElements(By.cssSelector(JobcategoryInputParameters.getjobActionButtonValidation())).get(0)
+				.getText());
+		if (driver1.findElement(By.cssSelector(JobcategoryInputParameters.getedit_compactlayot())).getText()
+		.equals(JobcategoryInputParameters.getEdit())) {
+			if (driver1.findElement(By.cssSelector(JobcategoryInputParameters.getchangedate_compactlayot())).getText()
+			.equals(JobcategoryInputParameters.getChangeDate())) {
+				if (driver1.findElement(By.cssSelector(JobcategoryInputParameters.getMaterials_compactlayot())).getText()
+				.equals(JobcategoryInputParameters.getAddMaterials())) {
+					if (driver1.findElement(By.cssSelector(JobcategoryInputParameters.getContract_compactlayot()))
+					.getText().equals(JobcategoryInputParameters.getAddContractLabor())) {
+						if (driver1.findElement(By.cssSelector(JobcategoryInputParameters.getFootage_compactlayot()))
+						.getText().equals(JobcategoryInputParameters.getAddConstructedFootage())) {
+							if (driver1.findElement(By.cssSelector(JobcategoryInputParameters.getHold_compactlayot()))
+							.getText().equals(JobcategoryInputParameters.getHold_Unhold())) {
+								if (driver1
+								.findElement(By.cssSelector(JobcategoryInputParameters.getclose_compactlayot()))
+								.getText().equals(JobcategoryInputParameters.getClose())) {
+									if (driver1.findElement(By.cssSelector(JobcategoryInputParameters.getapproval_compactlayot()))
+									.getText().equals(JobcategoryInputParameters.getSubmit_for_Approval())) {
+										if (driver1.findElement(By.cssSelector(
+										JobcategoryInputParameters.getcancel_compactlayot()))
+										.getText().equals(JobcategoryInputParameters.getCancel())) {
 											testStepStatus.setElementstatus("All Job level Action Buttons loaded");
 											testStepStatus.setElementName("All Job level Action Buttons");
 										} else {
-											logger.info("Cancel Button Not loaded  in the Job page" + driver
-													.findElement(By.cssSelector(
-															JobcategoryInputParameters.getcancel_compactlayot()))
-													.isDisplayed());
+											//	logger.info("Cancel Button Not loaded  in the Job page" + driver1
+											//	.findElement(By.cssSelector(
+											//	JobcategoryInputParameters.getcancel_compactlayot()))
+											//	.isDisplayed());
 											flag = false;
 											testStepStatus.setElementstatus("Cancel Button Not loaded");
 											testStepStatus.setElementName("Cancel Button");
 										}
 									} else {
-										logger.info("Submit for Approval Button Not loaded  in the Job page" + driver
-												.findElement(By.cssSelector(
-														JobcategoryInputParameters.getapproval_compactlayot()))
-												.isDisplayed());
+										//logger.info("Submit for Approval Button Not loaded  in the Job page" + driver1
+										//		.findElement(By.cssSelector(
+										//		JobcategoryInputParameters.getapproval_compactlayot()))
+										//		.isDisplayed());
 										flag = false;
 										testStepStatus.setElementstatus("Submit for Approval Button Not loaded");
 										testStepStatus.setElementName("Submit for Approval Button");
 									}
 								} else {
-									logger.info("Close Button Not loaded  in the Job page" + driver
-											.findElement(
-													By.cssSelector(JobcategoryInputParameters.getclose_compactlayot()))
-											.isDisplayed());
+									/*logger.info("Close Button Not loaded  in the Job page" + driver1
+									 .findElement(
+									 By.cssSelector(JobcategoryInputParameters.getclose_compactlayot()))
+									 .isDisplayed());*/
 									flag = false;
 									testStepStatus.setElementstatus("Close Button Not loaded");
 									testStepStatus.setElementName("Close Button");
 								}
 							} else {
-								logger.info("Hold/Unhold Not loaded  in the Job page" + driver
-										.findElement(By.cssSelector(JobcategoryInputParameters.getHold_compactlayot()))
-										.isDisplayed());
+								/*logger.info("Hold/Unhold Not loaded  in the Job page" + driver1
+								 .findElement(By.cssSelector(JobcategoryInputParameters.getHold_compactlayot()))
+								 .isDisplayed());*/
 								flag = false;
 								testStepStatus.setElementstatus("Hold/Unhold Button Not loaded");
 								testStepStatus.setElementName("Hold/Unhold Button");
 							}
 						} else {
-							logger.info("Add Constructed Footage Button Not loaded  in the Job page" + driver
-									.findElement(By.cssSelector(JobcategoryInputParameters.getFootage_compactlayot()))
-									.isDisplayed());
+							/*logger.info("Add Constructed Footage Button Not loaded  in the Job page" + driver1
+							 .findElement(By.cssSelector(JobcategoryInputParameters.getFootage_compactlayot()))
+							 .isDisplayed());*/
 							flag = false;
 							testStepStatus.setElementstatus("Add Constructed Footage Button Not loaded");
 							testStepStatus.setElementName("Add Constructed Footage Button");
 						}
 					} else {
-						logger.info("Add Contract Labor Button Not loaded  in the Job page" + driver
-								.findElement(By.cssSelector(JobcategoryInputParameters.getContract_compactlayot()))
-								.isDisplayed());
+						/*logger.info("Add Contract Labor Button Not loaded  in the Job page" + driver1
+						 .findElement(By.cssSelector(JobcategoryInputParameters.getContract_compactlayot()))
+						 .isDisplayed());*/
 						flag = false;
 						testStepStatus.setElementstatus("Add Contract Labor Button Not loaded");
 						testStepStatus.setElementName("Add Contract Labor Button");
 					}
 
 				} else {
-					logger.info("Add Materials Button Not loaded  in the Job page"
-							+ driver.findElement(By.cssSelector(JobcategoryInputParameters.getMaterials_compactlayot()))
-									.isDisplayed());
+					/*logger.info("Add Materials Button Not loaded  in the Job page"
+					 + driver1.findElement(By.cssSelector(JobcategoryInputParameters.getMaterials_compactlayot()))
+					 .isDisplayed());*/
 					flag = false;
 					testStepStatus.setElementstatus("Add Materials Button Not loaded");
 					testStepStatus.setElementName("Add Materials Button");
 
 				}
 			} else {
-				logger.info("Change Date Button Not loaded  in the Job page"
-						+ driver.findElement(By.cssSelector(JobcategoryInputParameters.getchangedate_compactlayot()))
-								.isDisplayed());
+				/*logger.info("Change Date Button Not loaded  in the Job page"
+				 + driver1.findElement(By.cssSelector(JobcategoryInputParameters.getchangedate_compactlayot()))
+				 .isDisplayed());*/
 				flag = false;
 				testStepStatus.setElementstatus("Change Date Button Not loaded");
 				testStepStatus.setElementName("Change Date Button");
 			}
 
 		} else {
-			logger.info("Edit Button Not loaded  in the Job page" + driver
-					.findElement(By.cssSelector(JobcategoryInputParameters.getedit_compactlayot())).isDisplayed());
+			/*logger.info("Edit Button Not loaded  in the Job page" + driver1
+			 .findElement(By.cssSelector(JobcategoryInputParameters.getedit_compactlayot())).isDisplayed());*/
 			flag = false;
 			// testStepStatus.setflag(flag);
 			testStepStatus.setElementstatus("Edit Button Not loaded");
@@ -1032,20 +1055,24 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public void JobUploadAction(RemoteWebDriver driver) {
+	@Keyword
+	public void JobUploadAction( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		ActionUtils.waitFor3Seconds();
 		driver.findElement(By.xpath(JobcategoryInputParameters.getnextbutton())).click();
 		ActionUtils.waitFor3Seconds();
 	}
 
-	public boolean verifyQuickActionButtons(RemoteWebDriver driver) {
+	@Keyword
+	public boolean verifyQuickActionButtons( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		System.out.println("Quick action button validation for task level");
 		ActionUtils.waitFor3Seconds();
 		// ActionUtils.waitFor10Seconds();
 		driver.findElements(By.cssSelector(JobcategoryInputParameters.getp2task_checkbox())).get(1).click();
 
 		if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getquickActionbuttons())).get(0)
-				.isDisplayed()) {
+		.isDisplayed()) {
 			System.out.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getquickActionbuttons()))
 					.get(0).getAttribute("innerText"));
 			System.out.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getquickActionbuttons()))
@@ -1060,22 +1087,22 @@ public class CommercialJobActionEFibre extends P2Base{
 					.get(0).getAttribute("innerText"));
 			if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getassignbutton())).isDisplayed()) {
 				if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getquickActionbuttons())).get(1)
-						.isDisplayed()) {
+				.isDisplayed()) {
 					if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getquickActionbuttons())).get(2)
-							.isDisplayed()) {
+					.isDisplayed()) {
 						if (driver.findElements(By.cssSelector(JobcategoryInputParameters.getquickActionbuttons()))
-								.get(3).isDisplayed()) {
+						.get(3).isDisplayed()) {
 							if (driver.findElement(By.cssSelector(JobcategoryInputParameters.getapprovebutton()))
-									.isDisplayed()) {
+							.isDisplayed()) {
 								ActionUtils.waitFor1Seconds();
 								if (driver
-										.findElements(By.cssSelector(JobcategoryInputParameters.getnotRequiredButton()))
-										.get(0).isDisplayed()) {
+								.findElements(By.cssSelector(JobcategoryInputParameters.getnotRequiredButton()))
+								.get(0).isDisplayed()) {
 									flag = true;
 								} else {
 									logger.info("Not Required Button Not loaded  in the Job page" + driver
 											.findElements(
-													By.cssSelector(JobcategoryInputParameters.getnotRequiredButton()))
+											By.cssSelector(JobcategoryInputParameters.getnotRequiredButton()))
 											.get(4).isDisplayed());
 									flag = false;
 
@@ -1103,7 +1130,7 @@ public class CommercialJobActionEFibre extends P2Base{
 				} else {
 					logger.info("Schedule Date Button Not loaded  in the Job page"
 							+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getapprovebutton())).get(1)
-									.isDisplayed());
+							.isDisplayed());
 					flag = false;
 
 				}
@@ -1116,7 +1143,7 @@ public class CommercialJobActionEFibre extends P2Base{
 		} else {
 			logger.info("New  Button Not loaded  in the Job page"
 					+ driver.findElements(By.cssSelector(JobcategoryInputParameters.getquickActionbuttons())).get(0)
-							.isDisplayed());
+					.isDisplayed());
 			flag = false;
 		}
 
@@ -1124,8 +1151,9 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public boolean verifyValuesInJobDetails(RemoteWebDriver driver) {
-
+	@Keyword
+	public boolean verifyValuesInJobDetails( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		boolean flag = false;
 		driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields())).get(119).isDisplayed();
 		System.out.println(driver.findElements(By.cssSelector(JobcategoryInputParameters.getvalidatejobfields()))
@@ -1140,7 +1168,7 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	/*
 	 *
-	 * public void Job_Commercial_WithoutSubtype(RemoteWebDriver driver, String
+	 * @Keyword public void Job_Commercial_WithoutSubtype(  String
 	 * jobType) { driver.findElements(By.cssSelector(JobcategoryInputParameters.
 	 * getcategory_select())).get(0).click(); ActionUtils.waitFor1Seconds();
 	 * driver.findElement(By.cssSelector(JobcategoryInputParameters.
@@ -1157,7 +1185,9 @@ public class CommercialJobActionEFibre extends P2Base{
 	 *
 	 * }
 	 */
-	public void Job_Commercial_WithSubtype(RemoteWebDriver driver, String jobType, String subtype) {
+	@Keyword
+	public void Job_Commercial_WithSubtype(  String jobType, String subtype) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		driver.findElements(By.cssSelector(JobcategoryInputParameters.getcategory_select())).get(0).click();
 		ActionUtils.waitFor1Seconds();
 		driver.findElement(By.cssSelector(JobcategoryInputParameters.getcommercial_category())).click();
@@ -1176,50 +1206,60 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public void SurveyPresentValidation(RemoteWebDriver driver) throws Exception {
+	@Keyword
+	public void SurveyPresentValidation( ) throws Exception {
+		WebDriver driver = DriverFactory.getWebDriver();
+		WebUI.navigateToUrl('https://polaris2--regression.lightning.force.com/lightning/r/Job__c/a0J3K000000KqZyUAK/view')
 		ActionUtils.waitFor10Seconds();
 		System.out.println("Survey job started");
 		// driver.navigate().refresh();
 		// System.out.println("Page Refreshed");
 		ActionUtils.waitFor10Seconds();
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Job Management/TaskNamesInP2Component/SurveyTask'), 10)
 		System.out.println(
 				driver.findElement(By.xpath("//*/div/div/footer/div/div/table/tbody/tr[1]/td[2]/div")).getText());
-		if (driver.findElement(By.xpath("//*/div/div/footer/div/div/table/tbody/tr[1]/td[2]/div")).getText()
-				.trim() != "Survey") {
-			CreateNewTaskAction(driver, "Survey", "Survey");
+		if (driver.findElement(By.xpath("//*/a[text()='Survey']")).getText()
+		.trim() != "Survey") {
+			(new p2.action.CommercialJobActionEFibre()).CreateNewTaskAction(driver, "Survey", "Survey");
 
 		} else {
 			System.out.println("survey start");
 			ActionUtils.waitFor10Seconds();
 			System.out.println(
-					driver.findElement(By.xpath("//*/div/div/footer/div/div/table/tbody/tr[1]/td[1]/div/div/label"))
-							.getSize());
+					driver.findElement(By.xpath("//*/a[text()='Survey']"))
+					.getSize());
 			ActionUtils.waitFor10Seconds();
-			driver.findElement(By.xpath("//*/div/div/footer/div/div/table/tbody/tr[1]/td[1]/div/div/label")).click();
+		//	driver.findElement(By.xpath("//*/a[text()='Survey']")).click();
+			WebUI.click(findTestObject('Object Repository/Job Management/TaskNamesInP2Component/SurveyTask'))
 			System.out.println("survey- clicked");
 			ActionUtils.waitFor10Seconds();
 			System.out.println(
 					driver.findElements(By.xpath("//*/div/div/header/div[2]/header/div[3]/div[2]/button")).size());
 			ActionUtils.waitFor10Seconds();
-		def	 LstButtons = [ "Assign to BP/ IG", "Accept", "Schedule Date", "Change Date", "Change BP/ IG",
-					"Approve", "Not Required" ];
-			System.out.println(LstButtons.length);
-			for (int i = 0; i < LstButtons.length; i++) {
+			def	 LstButtons = ["Assign to BP/ IG", "Accept", "Schedule Date", "Change Date", "Change BP/ IG", "Approve", "Not Required"];
+			System.out.println(LstButtons.size());
+			String statusbtn="N"
+			for (int i = 0; i < LstButtons.size(); i++) {
 				// System.out.println(i);
 				for (int j = 0; j < driver
-						.findElements(By.xpath("//*/div/div/header/div[2]/header/div[3]/div[2]/button")).size(); j++) {
+				.findElements(By.xpath("//button[@class='slds-button slds-button_neutral']")).size(); j++) {
 					System.out.println(
-							driver.findElements(By.xpath("//*/div/div/header/div[2]/header/div[3]/div[2]/button"))
-									.get(j).getText());
-					if (driver.findElements(By.xpath("//*/div/div/header/div[2]/header/div[3]/div[2]/button")).get(j)
-							.getText().toString().trim() == LstButtons[i].toString().trim()) {
-						System.out.println(LstButtons[i] + "  Button is presented");
-						break;
+							driver.findElements(By.xpath("//button[@class='slds-button slds-button_neutral']"))
+							.get(j).getText());
+					if (driver.findElements(By.xpath("//button[@class='slds-button slds-button_neutral']")).get(j)
+					.getText().toString().trim() == LstButtons[i].toString().trim()) {
+						
+						statusbtn="Y"
+						 break;
 					} else {
-						System.out.println(LstButtons[i] + "  Button is not presented");
-						break;
+						//System.out.println(LstButtons[i] + "  Button is not presented");
+						statusbtn="N"
+					 
 					}
+					
 				}
+				if(statusbtn=="N")
+				{System.out.println(LstButtons[i] + "  Button is not presented");}else{System.out.println(LstButtons[i] + "  Button is presented");}
 			}
 		}
 
@@ -1227,33 +1267,35 @@ public class CommercialJobActionEFibre extends P2Base{
 
 	}
 
-	public void SurveyTypeValidation(RemoteWebDriver driver) {
+	@Keyword
+	public void SurveyTypeValidation( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		System.out.println("Survey Type validation");
 		ActionUtils.waitFor10Seconds();
-		driver.findElement(By.xpath("//*/div/div/footer/div/div/table/tbody/tr[1]/td[3]/div/a")).click();
+		//driver.findElement(By.xpath("//*/div/div/footer/div/div/table/tbody/tr[1]/td[3]/div/a")).click();
 		ActionUtils.waitFor10Seconds();
-		System.out.println(driver.findElement(By.xpath("//*/div/div[3]/div[2]/div/div[2]/span/span")).getText());
+		System.out.println(driver.findElement(By.xpath(" //div[.//span[text()='Survey Type']]/following-sibling::div[@class='slds-form-element__control']/span")).getText());
 		System.out.println("Survey type validation finished");
 	}
 
-	public void VerifyNoQuickActionButtonsJob(RemoteWebDriver driver) {
+	@Keyword
+	public void VerifyNoQuickActionButtonsJob( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
+		WebUI.navigateToUrl('https://polaris2--regression.lightning.force.com/lightning/r/P2_Task__c/a0p3K000000eH1fQAE/view')
 		System.out.println("Quick action button validation for job level");
-		def LstButtons =[ "Edit", "Add Contract Labor", "Add Material", "Add Track Estimate",
-				"Submit For Approval", "Change Date", "Add Contract Footage", "Edit DMRA" ];
-		System.out.println(LstButtons.length);
-		for (int i = 0; i < LstButtons.length; i++) {
+		def LstButtons =["Edit", "Add Contract Labor", "Add Material", "Add Track Estimate", "Submit For Approval", "Change Date", "Add Contract Footage", "Edit DMRA"];
+		System.out.println(LstButtons.size());
+		for (int i = 0; i < LstButtons.size(); i++) {
 			// System.out.println(i);
 			for (int j = 0; j < driver.findElements(By.xpath(
-					"//*[@id=\"brandBand_1\"]/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/header/div[2]/div/div[2]/ul"))
-					.size(); j++) {
+			"//button[@class='slds-button slds-button_neutral']"))
+			.size(); j++) {
 				System.out.println(driver.findElements(By.xpath(
-						"//*[@id=\"brandBand_1\"]/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/header/div[2]/div/div[2]/ul/li["
-								+ i + "]/a/div"))
-						.get(0).getText());
+						"//button[@class='slds-button slds-button_neutral']"))
+						.get(i).getText());
 				if (driver.findElements(By.xpath(
-						"//*[@id=\"brandBand_1\"]/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/header/div[2]/div/div[2]/ul/li["
-								+ i + "]/a/div"))
-						.get(0).getText().toString().trim() == LstButtons[i].toString().trim()) {
+				"//button[@class='slds-button slds-button_neutral']"))
+				.get(i).getText().toString().trim() == LstButtons[i].toString().trim()) {
 					System.out.println(LstButtons[i] + "  Button is presented");
 					break;
 				} else {
@@ -1265,24 +1307,30 @@ public class CommercialJobActionEFibre extends P2Base{
 		System.out.println("Job Level quick buttons verified");
 	}
 
-	public void VerifyNoOfTasksJobsJob(RemoteWebDriver driver) {
+	@Keyword
+	public void VerifyNoOfTasksJobsJob( ) {
+		WebDriver driver = DriverFactory.getWebDriver();
+		WebUI.navigateToUrl('https://polaris2--regression.lightning.force.com/lightning/r/Job__c/a0J3K000000KqZyUAK/view')
 		ActionUtils.waitFor10Seconds();
-		System.out.println(driver.findElements(By.xpath("//*/div/div/footer/div/div/table/tbody/tr")).size());
+		System.out.println(driver.findElements(By.xpath("//a[@class='slds-card__header-link slds-truncate']/span")).size());
 		//System.out.println(driver.findElements(By.xpath("//*/div/div/header/div[2]/header/div[3]/div[2]/button")).size());
-		
+
 		ActionUtils.waitFor10Seconds();
 		driver.findElement(
-				By.xpath("//*/div/div[1]/div[3]/div[1]/div/div[1]/div[1]/header/div[2]/div/div[1]/div[2]/h1/div/span"))
+				By.xpath("//span[@class='slds-text-heading_small']"))
 				.getText();
 		System.out.println("No Of Task in the job - "
 				+ driver.findElement(By.xpath(
-						"//*/div/div[1]/div[3]/div[1]/div/div[1]/div[1]/header/div[2]/div/div[1]/div[2]/h1/div/span"))
-						.getText()
-				+ " - " + driver.findElements(By.xpath("//*/div/div/footer/div/div/table/tbody/tr")).size());
+				"//span[@class='slds-text-heading_small']"))
+				.getText().replace('P2Tasks','').replace('(','').replace(')','')
+				//	+ " - " + driver.findElements(By.xpath("//*/div/div/footer/div/div/table/tbody/tr")).size()
+				);
 
 	}
 
-	public boolean SearchTaskAndClick(RemoteWebDriver driver, String Task) {
+	@Keyword
+	public boolean SearchTaskAndClick(  String Task) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		ActionUtils.waitFor15Seconds();
 		JavascriptExecutor jse = driver;
 		jse.executeScript("window.scrollBy(0,500)", "");
@@ -1298,15 +1346,17 @@ public class CommercialJobActionEFibre extends P2Base{
 		return flag;
 	}
 
-	public void CreateNewTaskAction(RemoteWebDriver driver, String milestone, String taskType) {
+	@Keyword
+	public void CreateNewTaskAction(  String milestone, String taskType) {
+		WebDriver driver = DriverFactory.getWebDriver();
 		ActionUtils.waitFor5Seconds();
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//button[contains(text(),'New')]"))).click().build()
 				.perform();
-//		driver.findElements(By.cssSelector("input[type='checkbox']")).get(1).click();
-//		ActionUtils.waitFor5Seconds();
+		//		driver.findElements(By.cssSelector("input[type='checkbox']")).get(1).click();
+		//		ActionUtils.waitFor5Seconds();
 		ActionUtils.waitFor5Seconds();
-//		driver.findElement(By.cssSelector("button[class='slds-button slds-button_neutral']")).click();
+		//		driver.findElement(By.cssSelector("button[class='slds-button slds-button_neutral']")).click();
 		ActionUtils.waitFor5Seconds();
 		action.moveToElement(driver.findElements(By.cssSelector("select[class='dynamic select']")).get(0)).click()
 				.build().perform();

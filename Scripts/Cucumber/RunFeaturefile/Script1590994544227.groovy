@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-not_run: CucumberKW.runFeatureFile('Include/features/test.feature')
+//not_run: CucumberKW.runFeatureFile('Include/features/test.feature')
 
 CucumberKW.runFeatureFile('Include/features/N_CommercialJobsEFibre.feature')
 
